@@ -99,7 +99,7 @@ export default function Layout({ children, currentPageName }) {
           <div className="flex items-center justify-between h-20">
             {/* Logo & Tagline */}
             <Link to={createPageUrl('Home')} className="flex items-center gap-2">
-              <img src="/nds-logo.png" alt="NuScript" className="h-10 w-auto" />
+              <img src="/nds.logo.png" alt="NuScript" className="h-10 w-auto" />
             </Link>
 
             {/* Desktop Navigation */}
