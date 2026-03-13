@@ -4,7 +4,6 @@ import { Mail, MapPin, Phone, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import GenericHero from '@/components/GenericHero';
 import Footer from '@/components/home/Footer';
-import { base44 } from '@/api/base44Client';
 import { toast } from 'sonner';
 
 export default function Contact() {
@@ -26,23 +25,16 @@ export default function Contact() {
 
     setIsSubmitting(true);
     try {
-      await base44.integrations.Core.SendEmail({
-        to: 'contact@nuscript.net',
-        subject: `Demo Request from ${formData.name}`,
-        body: `
-Name: ${formData.name}
-Email: ${formData.email}
-Organization: ${formData.organization || 'Not provided'}
-
-Needs:
-${formData.needs}
-        `.trim()
-      });
+      const subject = encodeURIComponent(`Demo Request from ${formData.name}`);
+      const body = encodeURIComponent(
+        `Name: ${formData.name}\nEmail: ${formData.email}\nOrganization: ${formData.organization || 'Not provided'}\n\nNeeds:\n${formData.needs}`
+      );
+      window.location.href = `mailto:contact@nuscript.net?subject=${subject}&body=${body}`;
       
-      toast.success('Request sent! We\'ll respond within 24 hours.');
+      toast.success('Opening your email client...');
       setFormData({ name: '', email: '', organization: '', needs: '' });
     } catch (error) {
-      toast.error('Failed to send request. Please try again.');
+      toast.error('Failed to open email client. Please email us directly at contact@nuscript.net.');
     } finally {
       setIsSubmitting(false);
     }
@@ -74,7 +66,7 @@ ${formData.needs}
         "5900 Balcones Drive, Ste 11995",
         "Austin, TX 78731"
       ],
-      phone: "+91-9790-444-939",
+      phone: "+1-469-242-0709",
       gradient: "from-purple-500 to-indigo-600"
     }
   ];
