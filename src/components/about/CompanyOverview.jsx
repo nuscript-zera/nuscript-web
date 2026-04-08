@@ -14,7 +14,7 @@ export default function CompanyOverview() {
           About NuScript
         </h2>
         <p style={{ fontWeight: 400, fontSize: '18px', lineHeight: '1.8' }} className="text-gray-700 max-w-3xl mx-auto">
-          NuScript is a SOC 2 and HIPAA-certified, healthcare operations company with over 25 years of experience at the intersection of clinical documentation and revenue cycle management. By pairing deep HIM and RCM expertise with AI-powered tools like NuScriptAI, NuScript helps U.S. healthcare organizations improve documentation quality, reduce physician burnout, and strengthen financial performance.
+          NuScript is a SOC 2 and HIPAA-certified, healthcare operations company with over 25 years of experience at the intersection of clinical documentation and revenue cycle management. By pairing deep HIM and RCM expertise with AI-enhanced workflows, NuScript helps U.S. healthcare organizations improve documentation quality, reduce physician burnout, and strengthen financial performance.
         </p>
       </motion.div>
     </section>

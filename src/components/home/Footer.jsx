@@ -5,14 +5,13 @@ import { Linkedin, Mail } from 'lucide-react';
 
 const footerLinks = {
   Services: [
-    'AI Medical Scribing',
-    'Medical Transcription',
+    'Clinical Documentation',
+    'Medico-Legal Transcription',
     'Medical Coding',
     'Revenue Cycle Management'
   ],
   Company: [
     'About',
-    'Platform',
     'Contact'
   ],
   Legal: [
@@ -29,7 +28,7 @@ export default function Footer() {
           <div className="col-span-2 md:col-span-2 text-left">
             <img src="/nds.white.logo.png" alt="NuScript" className="h-9 w-auto mb-6" />
             <p style={{ fontWeight: 400, fontSize: '14px', lineHeight: '1.6' }} className="text-gray-400 mb-6">
-              NuScript delivers AI‑powered clinical documentation and RCM services, backed by 25+ years of experience helping healthcare organizations improve accuracy, cash flow, and efficiency.
+              NuScript delivers clinical documentation and revenue cycle management services, backed by 25+ years of experience helping U.S. healthcare organizations improve accuracy, cash flow, and operational efficiency.
             </p>
             <div className="flex gap-3">
               <a href="https://www.linkedin.com/company/nuscriptindia" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-xl bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors">
@@ -47,15 +46,14 @@ export default function Footer() {
               <ul className="space-y-3">
                 {links.map((link) => {
                   const pageMap = {
-                    'AI Medical Scribing': 'AIMedicalScribing',
+                    'Clinical Documentation': 'ClinicalDocumentation',
+                    'Medico-Legal Transcription': 'MedicoLegalTranscription',
                     'Medical Coding': 'MedicalCoding',
                     'Revenue Cycle Management': 'RevenueCycleManagement',
-                    'Medical Transcription': 'MedicalTranscription',
                     'About': 'About',
                     'Contact': 'Contact',
                     'Privacy Policy': 'PrivacyPolicy',
-                    'Terms of Service': 'TermsOfUse',
-                    'Platform': 'Platform'
+                    'Terms of Service': 'TermsOfUse'
                   };
                   const page = pageMap[link];
                   return (

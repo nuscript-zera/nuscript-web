@@ -3,16 +3,16 @@ import { motion } from 'framer-motion';
 import { CheckCircle2 } from 'lucide-react';
 
 const milestones = [
-  { year: "2000", title: "Launched", desc: "Medical transcription services" },
+  { year: "2000", title: "Founded", desc: "Medical transcription services launched" },
   { year: "2017", title: "Expanded", desc: "Multi-specialty documentation services" },
-  { year: "2023", title: "Tech-Enabled", desc: "Launched RCM & coding services" },
-  { year: "2025", title: "AI-Powered", desc: "Introduced NuScriptAI platform" },
-  { year: "Now", title: "Integrated", desc: "Clinical-to-financial automation" }
+  { year: "2023", title: "Diversified", desc: "Added coding & RCM services" },
+  { year: "2025", title: "AI-Enhanced", desc: "Integrated AI into documentation workflows" },
+  { year: "Now", title: "Full-Service", desc: "Clinical documentation through revenue cycle" }
 ];
 
 const values = [
-  "HIPAA-aligned processes for PHI handling",
-  "Scalable pods of transcriptionists, scribes, coders & billers",
+  "HIPAA-compliant processes for all PHI handling",
+  "Scalable teams of transcriptionists, scribes, coders & billers",
   "Extended coverage across U.S. time zones",
   "Structured around U.S. regulatory expectations",
   "Specialty-specific expertise across 40+ specialties",
@@ -24,7 +24,6 @@ export default function LegacySection() {
     <section className="py-24 bg-gradient-to-b from-white to-blue-50/30 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Left - Timeline */}
           <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
             <span style={{ fontWeight: 500, fontSize: '14px' }} className="inline-block px-4 py-1.5 rounded-full bg-blue-100 text-[#2563eb] mb-6">
               Our Journey
@@ -34,7 +33,7 @@ export default function LegacySection() {
               <span className="block text-[#2563eb]">Healthcare Excellence</span>
             </h2>
             <p style={{ fontWeight: 400, fontSize: '18px', lineHeight: '1.6' }} className="text-slate-600 mb-12">
-              From traditional transcription to AI-powered documentation—our evolution reflects healthcare's own digital transformation.
+              From traditional transcription to AI-enhanced documentation services — our evolution reflects healthcare's own transformation.
             </p>
 
             <div className="relative">
@@ -60,7 +59,6 @@ export default function LegacySection() {
             </div>
           </motion.div>
 
-          {/* Right - Values */}
           <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
             <div className="bg-white rounded-3xl p-10 shadow-xl shadow-blue-500/5 border border-blue-100">
               <h3 style={{ fontWeight: 700, fontSize: '24px' }} className="text-slate-900 mb-8">
@@ -69,14 +67,7 @@ export default function LegacySection() {
               
               <div className="space-y-5">
                 {values.map((value, index) => (
-                  <motion.div
-                    key={value}
-                    initial={{ opacity: 0, y: 10 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: index * 0.1 }}
-                    className="flex items-start gap-4"
-                  >
+                  <motion.div key={value} initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.1 }} className="flex items-start gap-4">
                     <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0 mt-0.5">
                       <CheckCircle2 className="w-4 h-4 text-[#2563eb]" />
                     </div>
@@ -90,9 +81,7 @@ export default function LegacySection() {
                   <div className="flex -space-x-3">
                     {[1, 2, 3, 4].map((i) => (
                       <div key={i} className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-100 to-indigo-100 border-2 border-white flex items-center justify-center">
-                        <span style={{ fontWeight: 700, fontSize: '11px' }} className="text-[#2563eb]">
-                          {['MD', 'DO', 'NP', 'PA'][i - 1]}
-                        </span>
+                        <span style={{ fontWeight: 700, fontSize: '11px' }} className="text-[#2563eb]">{['MD', 'DO', 'NP', 'PA'][i - 1]}</span>
                       </div>
                     ))}
                   </div>

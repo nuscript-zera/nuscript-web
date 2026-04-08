@@ -15,9 +15,9 @@ export default function Home() {
       <LegacySection />
       <section className="max-w-7xl mx-auto px-6 lg:px-8">
         <CTABox 
-          heading="Ready to Transform Healthcare Operations?"
-          description="Join healthcare leaders using NuScript to automate documentation, reduce burnout, and accelerate revenue cycle. Let's show you how."
-          primaryButtonText="Schedule a Demo"
+          heading="Ready to Transform Your Healthcare Operations?"
+          description="Join healthcare providers using NuScript for accurate documentation, compliant coding, and accelerated revenue cycle. Let's show you how."
+          primaryButtonText="Schedule a Consultation"
           secondaryButtonText="Talk With Our Team"
         />
       </section>
