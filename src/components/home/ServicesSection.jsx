@@ -18,7 +18,7 @@ const services = [
     title: "Medico-Legal Transcription",
     description: "Specialized verbatim transcription for medico-legal cases, independent medical examinations, and legal proceedings. Every word matters — we deliver word-perfect accuracy.",
     features: ["Verbatim accuracy", "IME reports", "Legal compliance"],
-    gradient: "from-amber-500 to-orange-600",
+    gradient: "from-teal-500 to-teal-600",
     page: "MedicoLegalTranscription"
   },
   {

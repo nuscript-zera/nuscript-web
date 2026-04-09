@@ -43,15 +43,15 @@ export default function MedicoLegalTranscription() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-white via-amber-50/20 to-white">
+    <div className="min-h-screen bg-gradient-to-br from-white via-teal-50/20 to-white">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <motion.div animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.5, 0.3] }} transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute -top-40 -right-40 w-[600px] h-[600px] rounded-full bg-gradient-to-br from-amber-200/40 to-orange-300/20 blur-3xl" />
+          className="absolute -top-40 -right-40 w-[600px] h-[600px] rounded-full bg-gradient-to-br from-teal-200/40 to-teal-300/20 blur-3xl" />
       </div>
 
       <div className="relative">
         <GenericHero 
-          title={<>Medico-Legal Transcription<span className="block text-[#d97706]">Where Every Word Matters</span></>}
+          title={<>Medico-Legal Transcription<span className="block text-[#0D9488]">Where Every Word Matters</span></>}
           subtitle="Medico-Legal Services"
           description="Specialized verbatim transcription for medico-legal cases, independent medical examinations, and legal proceedings. Our experienced team delivers word-perfect accuracy backed by a comprehensive legal knowledge base."
           primaryButtonText="Schedule a Consultation"
@@ -71,8 +71,8 @@ export default function MedicoLegalTranscription() {
           <div className="grid md:grid-cols-3 gap-8">
             {workflowSteps.map((step, idx) => (
               <motion.div key={idx} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: idx * 0.1 }}
-                className="bg-white rounded-2xl p-8 border border-gray-100 hover:border-amber-200 hover:shadow-lg transition-all">
-                <div className="text-4xl font-bold text-[#d97706] mb-4" style={{ fontWeight: 800 }}>{step.number}</div>
+                className="bg-white rounded-2xl p-8 border border-gray-100 hover:border-teal-200 hover:shadow-lg transition-all">
+                <div className="text-4xl font-bold text-[#0D9488] mb-4" style={{ fontWeight: 800 }}>{step.number}</div>
                 <h3 style={{ fontWeight: 700, fontSize: '20px' }} className="text-[#222733] mb-3">{step.title}</h3>
                 <p style={{ fontWeight: 400, fontSize: '16px', lineHeight: '1.6' }} className="text-gray-600">{step.description}</p>
               </motion.div>
@@ -81,7 +81,7 @@ export default function MedicoLegalTranscription() {
         </section>
 
         {/* Document Types */}
-        <section className="bg-gradient-to-br from-amber-50 to-orange-50 py-24">
+        <section className="bg-gradient-to-br from-teal-50 to-teal-50 py-24">
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 style={{ fontWeight: 700, fontSize: '36px', lineHeight: '1.3' }} className="text-[#222733] mb-6">Document Types We Handle</h2>
@@ -91,7 +91,7 @@ export default function MedicoLegalTranscription() {
               {documentTypes.map((doc, idx) => (
                 <motion.div key={idx} initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: idx * 0.05 }}
                   className="flex items-center gap-3 bg-white rounded-xl p-4 border border-gray-100">
-                  <CheckCircle2 className="w-5 h-5 text-[#d97706] flex-shrink-0" />
+                  <CheckCircle2 className="w-5 h-5 text-[#0D9488] flex-shrink-0" />
                   <p style={{ fontWeight: 500, fontSize: '14px' }} className="text-[#222733]">{doc}</p>
                 </motion.div>
               ))}
@@ -111,8 +111,8 @@ export default function MedicoLegalTranscription() {
               return (
                 <motion.div key={idx} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: idx * 0.1 }}
                   className="bg-white rounded-2xl p-6 border border-gray-100">
-                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-100 to-orange-100 flex items-center justify-center mb-4">
-                    <Icon className="w-6 h-6 text-[#d97706]" />
+                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-teal-100 to-teal-100 flex items-center justify-center mb-4">
+                    <Icon className="w-6 h-6 text-[#0D9488]" />
                   </div>
                   <h3 style={{ fontWeight: 700, fontSize: '18px' }} className="text-[#222733] mb-2">{benefit.title}</h3>
                   <p style={{ fontWeight: 400, fontSize: '14px', lineHeight: '1.6' }} className="text-gray-600">{benefit.description}</p>
