@@ -94,7 +94,7 @@ export default function HeroSection() {
             {/* Main image */}
             <div className="relative">
               <img
-                src="/healthtech.webp"
+                src="/healthtech.jpg"
                 alt="Healthcare professional caring for patient"
                 className="relative z-10 rounded-2xl object-cover w-full h-[520px] shadow-xl"
               />
