@@ -79,6 +79,8 @@ export default function Contact() {
         primaryButtonText="Schedule a Demo"
         secondaryButtonText="Call Us"
         isSmall={true}
+        image="/contact.jpg"
+        imageAlt="Friendly support specialist ready to help"
       />
 
       {/* Contact Info Cards Section */}

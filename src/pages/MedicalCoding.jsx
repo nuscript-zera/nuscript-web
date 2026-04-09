@@ -51,6 +51,8 @@ export default function MedicalCoding() {
           primaryButtonText="Schedule a Consultation"
           secondaryButtonText="Talk With Our Team"
           isSmall={true}
+          image="/medical-coding.jpg"
+          imageAlt="Medical coding specialist at dual monitors"
         />
 
         <section className="max-w-7xl mx-auto px-6 lg:px-8 py-24">

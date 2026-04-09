@@ -57,6 +57,8 @@ export default function MedicoLegalTranscription() {
           primaryButtonText="Schedule a Consultation"
           secondaryButtonText="Talk With Our Team"
           isSmall={true}
+          image="/medico-legal.jpg"
+          imageAlt="Professional reviewing legal documents"
         />
 
         {/* How It Works */}

@@ -75,6 +75,8 @@ export default function ClinicalDocumentation() {
           primaryButtonText="Schedule a Consultation"
           secondaryButtonText="Talk With Our Team"
           isSmall={true}
+          image="/clinical-doc.jpg"
+          imageAlt="Doctor dictating clinical notes"
         />
 
         {/* Two Service Cards */}
