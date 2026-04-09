@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Shield, Stethoscope, Activity } from 'lucide-react';
+import { ArrowRight, Shield } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
@@ -83,78 +83,18 @@ export default function HeroSection() {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
+            initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="relative hidden lg:block"
+            className="relative hidden lg:flex items-center justify-center"
           >
             <div className="relative">
-              <div className="relative z-10 bg-white/80 backdrop-blur-xl rounded-3xl p-8 shadow-2xl shadow-blue-500/10 border border-blue-100/50">
-                <div className="flex items-center justify-between mb-8">
-                  <div className="flex items-center gap-3">
-                    <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#2563eb] to-[#4f46e5] flex items-center justify-center">
-                      <Stethoscope className="w-6 h-6 text-white" />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-slate-900">NuScript Services</p>
-                      <p className="text-sm text-slate-600">End-to-end documentation</p>
-                    </div>
-                  </div>
-                  <motion.div animate={{ scale: [1, 1.2, 1] }} transition={{ duration: 2, repeat: Infinity }} className="w-3 h-3 rounded-full bg-green-500" />
-                </div>
-
-                <div className="space-y-4 mb-8">
-                  {[
-                    { label: "Medical Transcription", status: "Active", color: "bg-green-100 text-green-700" },
-                    { label: "Medical Scribing", status: "Active", color: "bg-green-100 text-green-700" },
-                    { label: "Medico-Legal Transcription", status: "Active", color: "bg-green-100 text-green-700" },
-                    { label: "Medical Coding", status: "Active", color: "bg-green-100 text-green-700" },
-                    { label: "Revenue Cycle Management", status: "Active", color: "bg-green-100 text-green-700" },
-                  ].map((service, i) => (
-                    <motion.div
-                      key={service.label}
-                      initial={{ opacity: 0, x: 20 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ delay: 0.8 + i * 0.15 }}
-                      className="flex items-center justify-between p-3 rounded-xl bg-gradient-to-r from-blue-50/50 to-indigo-50/50"
-                    >
-                      <span className="text-sm font-medium text-slate-700">{service.label}</span>
-                      <span className={`text-xs font-semibold px-2.5 py-1 rounded-full ${service.color}`}>{service.status}</span>
-                    </motion.div>
-                  ))}
-                </div>
-
-                <div className="pt-6 border-t border-gray-100 flex items-center justify-between">
-                  <span className="text-sm text-slate-600">Same-day turnaround</span>
-                  <span className="text-sm font-medium text-[#2563eb]">HIPAA · SOC 2</span>
-                </div>
-              </div>
-
-              <motion.div
-                animate={{ y: [0, -10, 0] }}
-                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute -top-6 -right-6 bg-white rounded-2xl p-4 shadow-xl shadow-blue-500/10 border border-blue-100"
-              >
-                <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 rounded-lg bg-green-100 flex items-center justify-center">
-                    <span className="text-green-600 text-sm">✓</span>
-                  </div>
-                  <span className="text-sm font-medium text-gray-700">99.5% Accuracy</span>
-                </div>
-              </motion.div>
-
-              <motion.div
-                animate={{ y: [0, 10, 0] }}
-                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute -bottom-4 -left-4 bg-white rounded-2xl p-4 shadow-xl shadow-blue-500/10 border border-blue-100"
-              >
-                <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 rounded-lg bg-teal-100 flex items-center justify-center">
-                    <span className="text-teal-600 text-sm">$</span>
-                  </div>
-                  <span className="text-sm font-medium text-gray-700">Revenue Optimized</span>
-                </div>
-              </motion.div>
+              <img
+                src="/healthtech.webp"
+                alt="Healthcare professional with patient"
+                className="rounded-3xl shadow-2xl shadow-blue-500/10 object-cover w-full max-h-[560px]"
+              />
+              <div className="absolute inset-0 rounded-3xl ring-1 ring-inset ring-black/5" />
             </div>
           </motion.div>
         </div>
