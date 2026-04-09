@@ -66,51 +66,16 @@ export default function PlatformSection() {
             </div>
           </motion.div>
 
-          <motion.div initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} className="relative">
+          <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="relative">
             <div className="relative">
-              <div className="relative w-64 h-64 mx-auto">
-                <motion.div
-                  animate={{ rotate: 360 }}
-                  transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
-                  className="absolute inset-0 rounded-full border-2 border-dashed border-blue-500/30"
-                />
-                <motion.div
-                  animate={{ rotate: -360 }}
-                  transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                  className="absolute inset-8 rounded-full border-2 border-dashed border-teal-500/30"
-                />
-                
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <motion.div
-                    animate={{ scale: [1, 1.05, 1] }}
-                    transition={{ duration: 3, repeat: Infinity }}
-                    className="w-32 h-32 rounded-3xl bg-gradient-to-br from-[#2563eb] to-[#4f46e5] flex items-center justify-center shadow-2xl shadow-blue-500/50"
-                  >
-                    <span className="text-3xl font-bold text-white">NS</span>
-                  </motion.div>
-                </div>
-
-                {['MT', 'RCM', 'Code', 'QA'].map((label, i) => (
-                  <motion.div
-                    key={label}
-                    animate={{ rotate: 360 }}
-                    transition={{ duration: 15 + i * 5, repeat: Infinity, ease: "linear" }}
-                    className="absolute inset-0"
-                    style={{ transformOrigin: 'center' }}
-                  >
-                    <div
-                      className="absolute w-12 h-12 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center"
-                      style={{
-                        top: i === 0 ? '-10%' : i === 2 ? '110%' : '45%',
-                        left: i === 1 ? '-10%' : i === 3 ? '110%' : '45%',
-                        transform: `rotate(-${(360 / 15) * (15 + i * 5)}deg)`
-                      }}
-                    >
-                      <span className="text-xs font-semibold text-white">{label}</span>
-                    </div>
-                  </motion.div>
-                ))}
-              </div>
+              <div className="absolute -inset-3 bg-gradient-to-br from-blue-500/20 via-teal-500/10 to-indigo-500/10 rounded-[2rem] rotate-1" />
+              <img
+                src="/provider.png"
+                alt="Provider reviewing clinical documentation"
+                className="relative z-10 rounded-2xl object-cover w-full h-[420px] shadow-xl"
+              />
+              <div className="absolute inset-0 z-10 rounded-2xl bg-gradient-to-t from-[#111827]/40 via-transparent to-transparent" />
+              <div className="absolute inset-0 z-10 rounded-2xl ring-1 ring-inset ring-white/10" />
             </div>
 
             <motion.div
@@ -118,7 +83,7 @@ export default function PlatformSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.3 }}
-              className="mt-12 grid grid-cols-3 gap-4"
+              className="mt-6 grid grid-cols-3 gap-4"
             >
               {[
                 { value: "50M+", label: "Documents processed" },
