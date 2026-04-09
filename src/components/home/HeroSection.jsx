@@ -22,7 +22,7 @@ export default function HeroSection() {
       </div>
 
       <div className="relative max-w-7xl mx-auto px-6 lg:px-8 py-20">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
@@ -83,19 +83,66 @@ export default function HeroSection() {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            className="relative hidden lg:flex items-center justify-center"
+            initial={{ opacity: 0, x: 40 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.9, delay: 0.3 }}
+            className="relative hidden lg:block"
           >
+            {/* Background accent shape */}
+            <div className="absolute -inset-4 bg-gradient-to-br from-teal-100/60 via-blue-100/40 to-indigo-100/30 rounded-[2rem] -rotate-2" />
+            
+            {/* Main image */}
             <div className="relative">
               <img
-                src="/healthtech.jpg"
-                alt="Healthcare professional with patient"
-                className="rounded-3xl shadow-2xl shadow-blue-500/10 object-cover w-full max-h-[560px]"
+                src="/healthtech.webp"
+                alt="Healthcare professional caring for patient"
+                className="relative z-10 rounded-2xl object-cover w-full h-[520px] shadow-xl"
               />
-              <div className="absolute inset-0 rounded-3xl ring-1 ring-inset ring-black/5" />
+              {/* Gradient overlay for integration */}
+              <div className="absolute inset-0 z-10 rounded-2xl bg-gradient-to-t from-slate-900/20 via-transparent to-transparent" />
+              <div className="absolute inset-0 z-10 rounded-2xl ring-1 ring-inset ring-white/20" />
             </div>
+
+            {/* Floating badge — top right */}
+            <motion.div
+              animate={{ y: [0, -8, 0] }}
+              transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+              className="absolute -top-3 -right-3 z-20 bg-white rounded-2xl px-5 py-3 shadow-lg shadow-blue-500/10 border border-blue-100/50"
+            >
+              <div className="flex items-center gap-2.5">
+                <div className="w-9 h-9 rounded-xl bg-green-100 flex items-center justify-center">
+                  <svg className="w-5 h-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <div>
+                  <p style={{ fontWeight: 700, fontSize: '16px' }} className="text-slate-900">99.5%</p>
+                  <p style={{ fontWeight: 500, fontSize: '11px' }} className="text-slate-500">Accuracy Rate</p>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Floating badge — bottom left */}
+            <motion.div
+              animate={{ y: [0, 8, 0] }}
+              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+              className="absolute -bottom-3 -left-3 z-20 bg-white rounded-2xl px-5 py-3 shadow-lg shadow-blue-500/10 border border-blue-100/50"
+            >
+              <div className="flex items-center gap-2.5">
+                <div className="w-9 h-9 rounded-xl bg-blue-100 flex items-center justify-center">
+                  <svg className="w-5 h-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                  </svg>
+                </div>
+                <div>
+                  <p style={{ fontWeight: 700, fontSize: '16px' }} className="text-slate-900">HIPAA</p>
+                  <p style={{ fontWeight: 500, fontSize: '11px' }} className="text-slate-500">Fully Compliant</p>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Accent border on left edge */}
+            <div className="absolute left-0 top-12 bottom-12 w-1 z-20 rounded-full bg-gradient-to-b from-teal-400 via-blue-500 to-indigo-500" />
           </motion.div>
         </div>
       </div>
