@@ -35,7 +35,7 @@ export default function PrivacyPolicy() {
     },
     {
       title: 'Your Choices and Rights',
-      content: 'You may request to review, update, or delete personal information you have submitted to us by contacting us at contact@nuscript.net. We may need to retain certain information where required by law, for legitimate business purposes (such as record keeping or security), or to complete ongoing transactions.\n\nBecause we do not use tracking cookies or behavioral advertising tools on this site at this time, there are no cookie preferences you need to manage in connection with our website. If our use of cookies or tracking technologies changes in the future, we will update this Privacy Policy and, where required by law, provide appropriate notices or consent mechanisms.'
+      content: 'You may request to review, update, or delete personal information you have submitted to us by contacting us at hello@nuscript.net. We may need to retain certain information where required by law, for legitimate business purposes (such as record keeping or security), or to complete ongoing transactions.\n\nBecause we do not use tracking cookies or behavioral advertising tools on this site at this time, there are no cookie preferences you need to manage in connection with our website. If our use of cookies or tracking technologies changes in the future, we will update this Privacy Policy and, where required by law, provide appropriate notices or consent mechanisms.'
     },
     {
       title: 'Changes to This Policy',
@@ -43,7 +43,7 @@ export default function PrivacyPolicy() {
     },
     {
       title: 'Contact Us',
-      content: 'If you have any questions or concerns about this Privacy Policy, or if you would like to access, correct, or request deletion of your personal information, please contact us at:\n\nNuScript Data Solutions Private Limited\nEmail: contact@nuscript.net'
+      content: 'If you have any questions or concerns about this Privacy Policy, or if you would like to access, correct, or request deletion of your personal information, please contact us at:\n\nNuScript Data Solutions Private Limited\nEmail: hello@nuscript.net'
     }
   ];
 
@@ -112,13 +112,13 @@ export default function PrivacyPolicy() {
                       );
                     }
                     // Handle email links
-                    if (line.includes('contact@nuscript.net')) {
-                      const parts = line.split('contact@nuscript.net');
+                    if (line.includes('hello@nuscript.net')) {
+                      const parts = line.split('hello@nuscript.net');
                       return (
                         <p key={lineIdx} className="mb-2">
                           {parts[0]}
-                          <a href="mailto:contact@nuscript.net" className="text-[#6200EA] hover:underline">
-                            contact@nuscript.net
+                          <a href="mailto:hello@nuscript.net" className="text-[#6200EA] hover:underline">
+                            hello@nuscript.net
                           </a>
                           {parts[1]}
                         </p>

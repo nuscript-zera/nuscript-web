@@ -33,7 +33,7 @@ export default function CTASection() {
 
             <div className="space-y-6">
               {[
-                { icon: Mail, label: 'Email us at', value: 'contact@nuscript.com' },
+                { icon: Mail, label: 'Email us at', value: 'hello@nuscript.net' },
                 { icon: Phone, label: 'Call us at', value: '+1 (800) 555-0123' },
                 { icon: MapPin, label: 'Headquarters', value: 'India | Serving U.S. Healthcare' }
               ].map(({ icon: Icon, label, value }) => (

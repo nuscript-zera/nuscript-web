@@ -46,7 +46,7 @@ export default function TermsOfUse() {
     },
     {
       title: 'Contact Us',
-      content: 'If you have questions about these Terms of Use, please contact us at:\n\nNuScript Data Solutions Private Limited\nEmail: contact@nuscript.net'
+      content: 'If you have questions about these Terms of Use, please contact us at:\n\nNuScript Data Solutions Private Limited\nEmail: hello@nuscript.net'
     }
   ];
 
@@ -91,13 +91,13 @@ export default function TermsOfUse() {
                     );
                   }
                   // Handle email links
-                  if (line.includes('contact@nuscript.net')) {
-                    const parts = line.split('contact@nuscript.net');
+                  if (line.includes('hello@nuscript.net')) {
+                    const parts = line.split('hello@nuscript.net');
                     return (
                       <p key={lineIdx} className="mb-2">
                         {parts[0]}
-                        <a href="mailto:contact@nuscript.net" className="text-[#6200EA] hover:underline">
-                          contact@nuscript.net
+                        <a href="mailto:hello@nuscript.net" className="text-[#6200EA] hover:underline">
+                          hello@nuscript.net
                         </a>
                         {parts[1]}
                       </p>

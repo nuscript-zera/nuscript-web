@@ -29,12 +29,12 @@ export default function Contact() {
       const body = encodeURIComponent(
         `Name: ${formData.name}\nEmail: ${formData.email}\nOrganization: ${formData.organization || 'Not provided'}\n\nNeeds:\n${formData.needs}`
       );
-      window.location.href = `mailto:contact@nuscript.net?subject=${subject}&body=${body}`;
+      window.location.href = `mailto:hello@nuscript.net?subject=${subject}&body=${body}`;
       
       toast.success('Opening your email client...');
       setFormData({ name: '', email: '', organization: '', needs: '' });
     } catch (error) {
-      toast.error('Failed to open email client. Please email us directly at contact@nuscript.net.');
+      toast.error('Failed to open email client. Please email us directly at hello@nuscript.net.');
     } finally {
       setIsSubmitting(false);
     }
@@ -44,7 +44,7 @@ export default function Contact() {
     {
       icon: Mail,
       title: "Email",
-      details: ["General Inquiries: contact@nuscript.net", "Opportunities: careers@nuscript.net"],
+      details: ["General Inquiries: hello@nuscript.net", "Opportunities: careers@nuscript.net"],
       gradient: "from-violet-500 to-purple-600"
     },
     {

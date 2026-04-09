@@ -34,7 +34,7 @@ export default function Footer() {
               <a href="https://www.linkedin.com/company/nuscriptindia" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-xl bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors">
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="mailto:contact@nuscript.net" className="w-10 h-10 rounded-xl bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors">
+              <a href="mailto:hello@nuscript.net" className="w-10 h-10 rounded-xl bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors">
                 <Mail className="w-5 h-5" />
               </a>
             </div>
