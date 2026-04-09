@@ -26,7 +26,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-12">
           <div className="col-span-2 md:col-span-2 text-left">
-            <img src="/nds.white.logo.png" alt="NuScript" className="h-9 w-auto mb-6" />
+            <Link to={createPageUrl("Home")} onClick={() => window.scrollTo(0, 0)}><img src="/nds.white.logo.png" alt="NuScript" className="h-9 w-auto mb-6 hover:opacity-80 transition-opacity" /></Link>
             <p style={{ fontWeight: 400, fontSize: '14px', lineHeight: '1.6' }} className="text-gray-400 mb-6">
               NuScript delivers clinical documentation and revenue cycle management services, backed by 25+ years of experience helping U.S. healthcare organizations improve accuracy, cash flow, and operational efficiency.
             </p>
