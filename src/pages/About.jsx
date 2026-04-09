@@ -21,6 +21,8 @@ export default function About() {
         primaryButtonText="Schedule a Consultation"
         secondaryButtonText="Talk With Our Team"
         isSmall={true}
+        image="/about.jpg"
+        imageAlt="NuScript team collaborating"
       />
       <WhoNuScriptIs />
       <WhatNuScriptDoes />
