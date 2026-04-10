@@ -53,13 +53,13 @@ export default function PrivacyPolicy() {
         title="Privacy Policy"
         description="We value your privacy and are committed to protecting your personal information."
         primaryButtonText="Contact Us"
-        secondaryButtonText="Back Home"
+        
         isSmall={true}
       />
       
       <div className="max-w-4xl mx-auto px-6 lg:px-8 py-20">
         <div className="mb-8">
-          <p style={{ fontWeight: 500, fontSize: '14px' }} className="text-gray-600">
+          <p style={{ fontWeight: 400, fontSize: '16px' }} className="text-gray-600">
             Effective Date: April 2, 2023 (Updated January 18, 2026)
           </p>
         </div>
@@ -89,7 +89,7 @@ export default function PrivacyPolicy() {
                           if (line.trim().startsWith('•')) {
                             return (
                               <div key={lineIdx} className="flex gap-3 mb-2">
-                                <span className="w-1.5 h-1.5 rounded-full bg-[#6200EA] mt-2 flex-shrink-0" />
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#2563eb] mt-2 flex-shrink-0" />
                                 <span>{line.trim().substring(1).trim()}</span>
                               </div>
                             );
@@ -106,7 +106,7 @@ export default function PrivacyPolicy() {
                     if (line.trim().startsWith('•')) {
                       return (
                         <div key={lineIdx} className="flex gap-3 mb-2">
-                          <span className="w-1.5 h-1.5 rounded-full bg-[#6200EA] mt-2 flex-shrink-0" />
+                          <span className="w-1.5 h-1.5 rounded-full bg-[#2563eb] mt-2 flex-shrink-0" />
                           <span>{line.trim().substring(1).trim()}</span>
                         </div>
                       );
@@ -117,7 +117,7 @@ export default function PrivacyPolicy() {
                       return (
                         <p key={lineIdx} className="mb-2">
                           {parts[0]}
-                          <a href="mailto:hello@nuscript.net" className="text-[#6200EA] hover:underline">
+                          <a href="mailto:hello@nuscript.net" className="text-[#2563eb] hover:underline">
                             hello@nuscript.net
                           </a>
                           {parts[1]}
