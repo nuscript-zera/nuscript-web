@@ -75,7 +75,7 @@ export default function Contact() {
     <div className="min-h-screen bg-white">
       <GenericHero 
         title="Get in Touch"
-        description="We're here to help. Reach out to our team with any questions about NuScriptAI and how we can transform your healthcare operations."
+        description="We're here to help. Reach out to our team with any questions about NuScript and how we can transform your healthcare operations."
         primaryButtonText="Schedule a Demo"
         secondaryButtonText="Call Us"
         isSmall={true}
@@ -150,7 +150,7 @@ export default function Contact() {
               </div>
 
               <p style={{ fontWeight: 400, fontSize: '16px', lineHeight: '1.6' }} className="text-gray-700 max-w-md">
-                Let's discuss how NuScriptAI can reduce your documentation burden, improve coding quality, and accelerate your revenue cycle.
+                Let's discuss how NuScript can reduce your documentation burden, improve coding quality, and accelerate your revenue cycle.
               </p>
             </motion.div>
 

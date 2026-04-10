@@ -7,7 +7,7 @@ import { createPageUrl } from '@/utils';
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-gradient-to-br from-white via-blue-50/30 to-white">
+    <section className="relative min-h-[80vh] flex items-center overflow-hidden bg-gradient-to-br from-white via-blue-50/30 to-white">
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
           animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.5, 0.3] }}
@@ -21,7 +21,7 @@ export default function HeroSection() {
         />
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-6 lg:px-8 py-20">
+      <div className="relative max-w-7xl mx-auto px-6 lg:px-8 py-12 lg:py-16">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
             <motion.div
@@ -34,7 +34,7 @@ export default function HeroSection() {
               <span style={{ fontWeight: 500, fontSize: '14px' }} className="text-blue-700">HIPAA Compliant · SOC 2 Aligned</span>
             </motion.div>
 
-            <h1 style={{ fontWeight: 800, fontSize: '64px', letterSpacing: '-0.03em' }} className="text-slate-900 leading-tight mb-6">
+            <h1 style={{ fontWeight: 800, fontSize: 'clamp(36px, 8vw, 64px)', letterSpacing: '-0.03em' }} className="text-slate-900 leading-tight mb-6">
               Clinical Documentation
               <span className="block mt-2">
                 <span className="bg-gradient-to-r from-teal-600 to-blue-600 bg-clip-text text-transparent">
