@@ -51,7 +51,7 @@ export default function MedicoLegalTranscription() {
 
       <div className="relative">
         <GenericHero 
-          title={<>Medico-Legal Transcription<span className="block text-[#0D9488]">Where Every Word Matters</span></>}
+          title={<>Medico-Legal Transcription<span className="block text-[#2563EB]">Where Every Word Matters</span></>}
           subtitle="Medico-Legal Services"
           description="Specialized verbatim transcription for medico-legal cases, independent medical examinations, and legal proceedings. Our experienced team delivers word-perfect accuracy backed by a comprehensive legal knowledge base."
           primaryButtonText="Schedule a Consultation"
@@ -74,7 +74,7 @@ export default function MedicoLegalTranscription() {
             {workflowSteps.map((step, idx) => (
               <motion.div key={idx} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: idx * 0.1 }}
                 className="bg-white rounded-2xl p-8 border border-gray-100 hover:border-teal-200 hover:shadow-lg transition-all">
-                <div className="text-4xl font-bold text-[#0D9488] mb-4" style={{ fontWeight: 800 }}>{step.number}</div>
+                <div className="text-4xl font-bold text-[#2563EB] mb-4" style={{ fontWeight: 800 }}>{step.number}</div>
                 <h3 style={{ fontWeight: 700, fontSize: '20px' }} className="text-[#222733] mb-3">{step.title}</h3>
                 <p style={{ fontWeight: 400, fontSize: '16px', lineHeight: '1.6' }} className="text-gray-600">{step.description}</p>
               </motion.div>
@@ -93,7 +93,7 @@ export default function MedicoLegalTranscription() {
               {documentTypes.map((doc, idx) => (
                 <motion.div key={idx} initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: idx * 0.05 }}
                   className="flex items-center gap-3 bg-white rounded-xl p-4 border border-gray-100">
-                  <CheckCircle2 className="w-5 h-5 text-[#0D9488] flex-shrink-0" />
+                  <CheckCircle2 className="w-5 h-5 text-[#2563EB] flex-shrink-0" />
                   <p style={{ fontWeight: 500, fontSize: '14px' }} className="text-[#222733]">{doc}</p>
                 </motion.div>
               ))}
@@ -114,7 +114,7 @@ export default function MedicoLegalTranscription() {
                 <motion.div key={idx} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: idx * 0.1 }}
                   className="bg-white rounded-2xl p-6 border border-gray-100">
                   <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-teal-100 to-teal-100 flex items-center justify-center mb-4">
-                    <Icon className="w-6 h-6 text-[#0D9488]" />
+                    <Icon className="w-6 h-6 text-[#2563EB]" />
                   </div>
                   <h3 style={{ fontWeight: 700, fontSize: '18px' }} className="text-[#222733] mb-2">{benefit.title}</h3>
                   <p style={{ fontWeight: 400, fontSize: '14px', lineHeight: '1.6' }} className="text-gray-600">{benefit.description}</p>
