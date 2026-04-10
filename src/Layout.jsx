@@ -56,10 +56,10 @@ export default function Layout({ children, currentPageName }) {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-xl border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
-            <Link to={createPageUrl('Home')} onClick={() => window.scrollTo(0, 0)} className="flex items-center gap-2"></Link>            
+            <Link to={createPageUrl('Home')} onClick={() => window.scrollTo(0, 0)} className="flex items-center gap-2">
               <img src="/nds.logo.png" alt="NuScript" className="h-10 w-auto" />
             </Link>
-
+            
             <div className="hidden lg:flex items-center gap-8">
               {navigation.map((item) => (
                 <div 
