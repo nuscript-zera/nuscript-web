@@ -115,7 +115,7 @@ export default function Layout({ children, currentPageName }) {
             </div>
 
             <div className="hidden lg:flex items-center gap-4">
-              <a href="https://app.nuscript.net" target="_blank" rel="noopener noreferrer">
+              <a href="https://app.medscribeai.in" target="_blank" rel="noopener noreferrer">
                 <Button style={{ fontWeight: 700, fontSize: '14px' }} className="bg-[#2563eb] hover:bg-blue-700 text-white rounded-xl px-6">
                   Login
                 </Button>
@@ -158,7 +158,7 @@ export default function Layout({ children, currentPageName }) {
                   </div>
                 ))}
                 <div className="pt-4 space-y-3">
-                  <a href="https://app.nuscript.net" target="_blank" rel="noopener noreferrer" className="block">
+                  <a href="https://app.medscribeai.in" target="_blank" rel="noopener noreferrer" className="block">
                     <Button className="w-full bg-[#2563eb] hover:bg-blue-700 text-white">Login</Button>
                   </a>
                 </div>
