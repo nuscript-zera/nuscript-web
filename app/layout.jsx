@@ -1,16 +1,31 @@
-import localFont from "next/font/local";
-import { Toaster } from "sonner";
+import { Instrument_Serif, Public_Sans, Inter_Tight } from "next/font/google";
 
 import "./globals.css";
-import Nav from "@/components/Nav";
-import Footer from "@/components/Footer";
+import SiteHeader from "@/components/SiteHeader";
+import CertificateFooter from "@/components/CertificateFooter";
 
-// Self-hosted Sora (variable, weights 100–800). next/font handles the
-// @font-face, hashing, and <link rel=preload> automatically — no CDN, no FOUT.
-const sora = localFont({
-  src: "./fonts/Sora-Variable.woff2",
-  variable: "--font-sora",
-  weight: "100 800",
+// Fonts — self-hosted at build by next/font (no runtime CDN):
+//   Instrument Serif → display headings   (--font-heading)
+//   Public Sans      → body copy           (--font-sans)
+//   Inter Tight      → uppercase labels/UI (--font-ui)
+const instrumentSerif = Instrument_Serif({
+  subsets: ["latin"],
+  weight: "400",
+  style: ["normal", "italic"],
+  variable: "--font-heading",
+  display: "swap",
+});
+
+const publicSans = Public_Sans({
+  subsets: ["latin"],
+  variable: "--font-sans",
+  display: "swap",
+});
+
+const interTight = Inter_Tight({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  variable: "--font-ui",
   display: "swap",
 });
 
@@ -56,19 +71,23 @@ export const metadata = {
 };
 
 export const viewport = {
-  themeColor: "#2563eb",
+  themeColor: "#0D1B1E",
   width: "device-width",
   initialScale: 1,
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={sora.variable}>
+    <html
+      lang="en"
+      className={`${instrumentSerif.variable} ${publicSans.variable} ${interTight.variable}`}
+    >
       <body>
-        <Nav />
-        <main className="pt-20">{children}</main>
-        <Footer />
-        <Toaster position="top-center" richColors />
+        <div className="lab-grain min-h-screen">
+          <SiteHeader />
+          {children}
+          <CertificateFooter />
+        </div>
       </body>
     </html>
   );

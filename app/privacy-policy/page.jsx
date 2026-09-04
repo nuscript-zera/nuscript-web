@@ -1,4 +1,4 @@
-import GenericHero from "@/components/GenericHero";
+import LegalPage from "@/components/LegalPage";
 
 export const metadata = {
   title: "Privacy Policy",
@@ -36,7 +36,7 @@ const sections = [
   {
     title: "Sharing of Information",
     content:
-      "We do not sell or rent your personal information. We may share the information you provide only in the following limited situations:\n\n• Service providers: With trusted service providers who assist us in operating our website, managing email or job applications, or supporting our IT infrastructure (for example, hosting, email, or application management tools). These providers are permitted to use your information only to perform services on our behalf and are bound by appropriate confidentiality and security obligations.\n\n• Legal and compliance: When required to comply with applicable laws, regulations, legal processes, or enforceable governmental requests, or to protect our rights, privacy, safety, or property.\n\n• With your consent: When you explicitly authorize us to share your information for a specific purpose (for example, when coordinating with a recruitment partner or client contact at your request).",
+      "We do not sell or rent your personal information. We may share the information you provide only in the following limited situations:\n\n• Service providers: With trusted service providers who assist us in operating our website, managing email or job applications, or supporting our IT infrastructure. These providers are permitted to use your information only to perform services on our behalf and are bound by appropriate confidentiality and security obligations.\n\n• Legal and compliance: When required to comply with applicable laws, regulations, legal processes, or enforceable governmental requests, or to protect our rights, privacy, safety, or property.\n\n• With your consent: When you explicitly authorize us to share your information for a specific purpose.",
   },
   {
     title: "Security",
@@ -46,12 +46,12 @@ const sections = [
   {
     title: "Your Choices and Rights",
     content:
-      "You may request to review, update, or delete personal information you have submitted to us by contacting us at hello@nuscript.net. We may need to retain certain information where required by law, for legitimate business purposes (such as record keeping or security), or to complete ongoing transactions.\n\nBecause we do not use tracking cookies or behavioral advertising tools on this site at this time, there are no cookie preferences you need to manage in connection with our website. If our use of cookies or tracking technologies changes in the future, we will update this Privacy Policy and, where required by law, provide appropriate notices or consent mechanisms.",
+      "You may request to review, update, or delete personal information you have submitted to us by contacting us at hello@nuscript.net. We may need to retain certain information where required by law, for legitimate business purposes, or to complete ongoing transactions.\n\nBecause we do not use tracking cookies or behavioral advertising tools on this site at this time, there are no cookie preferences you need to manage in connection with our website.",
   },
   {
     title: "Changes to This Policy",
     content:
-      'We may update this Privacy Policy from time to time to reflect changes in our practices, technologies, or legal requirements. Any updates will be posted on this page, and the "Effective Date" and "last reviewed" date will indicate when the policy was last updated. Your continued use of the website after changes are posted will signify your acceptance of the updated policy.',
+      'We may update this Privacy Policy from time to time to reflect changes in our practices, technologies, or legal requirements. Any updates will be posted on this page, and the "Effective Date" will indicate when the policy was last updated.',
   },
   {
     title: "Contact Us",
@@ -60,99 +60,13 @@ const sections = [
   },
 ];
 
-function RichText({ text }) {
-  return (
-    <>
-      {text.split("\n").map((line, lineIdx) => {
-        if (line.trim().startsWith("•")) {
-          return (
-            <div key={lineIdx} className="flex gap-3 mb-2">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#2563eb] mt-2 flex-shrink-0" />
-              <span>{line.trim().substring(1).trim()}</span>
-            </div>
-          );
-        }
-        if (line.includes("hello@nuscript.net")) {
-          const parts = line.split("hello@nuscript.net");
-          return (
-            <p key={lineIdx} className="mb-2">
-              {parts[0]}
-              <a href="mailto:hello@nuscript.net" className="text-[#2563eb] hover:underline">
-                hello@nuscript.net
-              </a>
-              {parts[1]}
-            </p>
-          );
-        }
-        return line.trim() ? (
-          <p key={lineIdx} className="mb-2">
-            {line}
-          </p>
-        ) : (
-          <div key={lineIdx} className="h-2" />
-        );
-      })}
-    </>
-  );
-}
-
 export default function PrivacyPolicyPage() {
   return (
-    <div>
-      <GenericHero
-        title="Privacy Policy"
-        description="We value your privacy and are committed to protecting your personal information."
-        primaryButtonText="Contact Us"
-        isSmall={true}
-      />
-
-      <div className="max-w-4xl mx-auto px-6 lg:px-8 py-20">
-        <div className="mb-8">
-          <p style={{ fontWeight: 400, fontSize: "16px" }} className="text-gray-600">
-            Effective Date: April 2, 2023 (Updated January 18, 2026)
-          </p>
-        </div>
-
-        <div className="mb-12">
-          <p style={{ fontWeight: 400, fontSize: "16px", lineHeight: "1.8" }} className="text-gray-700">
-            At NuScript Data Solutions Private Limited ("NuScript", "we", "us", or
-            "our"), we value your privacy and are committed to protecting the
-            personal information you share with us. This Privacy Policy explains
-            how we collect, use, and protect information when you interact with
-            our website and related services as an India‑based, SOC 2 and
-            HIPAA‑certified healthcare operations partner.
-          </p>
-        </div>
-
-        <div className="space-y-12">
-          {sections.map((section, idx) => (
-            <div key={idx}>
-              <h2 style={{ fontWeight: 500, fontSize: "24px", lineHeight: "1.3" }} className="text-[#222733] mb-4">
-                {idx + 1}. {section.title}
-              </h2>
-
-              {section.subsections ? (
-                <div className="space-y-6">
-                  {section.subsections.map((subsection, subIdx) => (
-                    <div key={subIdx}>
-                      <h3 style={{ fontWeight: 500, fontSize: "16px" }} className="text-gray-800 mb-2">
-                        {subsection.subtitle}
-                      </h3>
-                      <div style={{ fontWeight: 400, fontSize: "16px", lineHeight: "1.8" }} className="text-gray-700">
-                        <RichText text={subsection.content} />
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              ) : (
-                <div style={{ fontWeight: 400, fontSize: "16px", lineHeight: "1.8" }} className="text-gray-700">
-                  <RichText text={section.content} />
-                </div>
-              )}
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
+    <LegalPage
+      title="Privacy Policy"
+      effective="Effective April 2, 2023 · Updated January 18, 2026"
+      intro='At NuScript Data Solutions Private Limited ("NuScript", "we", "us", or "our"), we value your privacy and are committed to protecting the personal information you share with us. This Privacy Policy explains how we collect, use, and protect information when you interact with our website and related services as an India‑based, SOC 2 and HIPAA‑certified healthcare operations partner.'
+      sections={sections}
+    />
   );
 }

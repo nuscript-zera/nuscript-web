@@ -1,4 +1,5 @@
-import MedicoLegalContent from "@/components/pages/MedicoLegalContent";
+import ServicePage from "@/components/ServicePage";
+import { getService, SERVICES } from "@/lib/services";
 
 export const metadata = {
   title: "Medico-Legal Transcription",
@@ -8,5 +9,7 @@ export const metadata = {
 };
 
 export default function Page() {
-  return <MedicoLegalContent />;
+  const service = getService("medico-legal-transcription");
+  const others = SERVICES.filter((s) => s.slug !== "medico-legal-transcription").slice(0, 3);
+  return <ServicePage service={service} others={others} />;
 }

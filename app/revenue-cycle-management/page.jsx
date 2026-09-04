@@ -1,4 +1,5 @@
-import RevenueCycleManagementContent from "@/components/pages/RevenueCycleManagementContent";
+import ServicePage from "@/components/ServicePage";
+import { getService, SERVICES } from "@/lib/services";
 
 export const metadata = {
   title: "Revenue Cycle Management",
@@ -8,5 +9,7 @@ export const metadata = {
 };
 
 export default function Page() {
-  return <RevenueCycleManagementContent />;
+  const service = getService("revenue-cycle-management");
+  const others = SERVICES.filter((s) => s.slug !== "revenue-cycle-management").slice(0, 3);
+  return <ServicePage service={service} others={others} />;
 }

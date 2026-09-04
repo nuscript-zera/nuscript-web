@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 
 export const metadata = {
   title: "Page Not Found",
@@ -7,27 +7,23 @@ export const metadata = {
 
 export default function NotFound() {
   return (
-    <div className="min-h-[70vh] flex items-center justify-center p-6 bg-slate-50">
-      <div className="max-w-md w-full text-center space-y-6">
-        <div className="space-y-2">
-          <h1 className="text-7xl font-normal text-slate-300">404</h1>
-          <div className="h-0.5 w-16 bg-slate-200 mx-auto" />
-        </div>
-        <div className="space-y-3">
-          <h2 className="text-2xl font-medium text-slate-800">Page Not Found</h2>
-          <p className="text-slate-600">
-            The page you're looking for could not be found.
-          </p>
-        </div>
-        <div className="pt-6">
-          <Button
-            asChild
-            className="bg-[#2563eb] hover:bg-blue-700 text-white rounded-xl px-6"
-          >
-            <Link href="/">Go Home</Link>
-          </Button>
-        </div>
+    <main className="flex min-h-[70vh] items-center bg-bone">
+      <div className="mx-auto max-w-[1400px] px-6 md:px-12">
+        <span className="micro-label text-sage">Error · 404</span>
+        <h1 className="mt-4 font-heading text-[clamp(3.5rem,12vw,10rem)] italic leading-[0.9] tracking-tight text-ink">
+          Not found.
+        </h1>
+        <p className="mt-6 max-w-md font-body text-lg leading-relaxed text-ink/65">
+          The page you&apos;re looking for doesn&apos;t exist or may have moved.
+        </p>
+        <Link
+          href="/"
+          className="group mt-10 inline-flex items-center gap-3 rounded-full bg-ink px-7 py-3.5 font-ui text-sm font-medium text-bone transition-colors hover:bg-plasma hover:text-ink"
+        >
+          Back to home
+          <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" strokeWidth={1.75} />
+        </Link>
       </div>
-    </div>
+    </main>
   );
 }

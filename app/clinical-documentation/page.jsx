@@ -1,4 +1,5 @@
-import ClinicalDocumentationContent from "@/components/pages/ClinicalDocumentationContent";
+import ServicePage from "@/components/ServicePage";
+import { getService, SERVICES } from "@/lib/services";
 
 export const metadata = {
   title: "Clinical Documentation — Medical Transcription & Scribing",
@@ -8,5 +9,7 @@ export const metadata = {
 };
 
 export default function Page() {
-  return <ClinicalDocumentationContent />;
+  const service = getService("clinical-documentation");
+  const others = SERVICES.filter((s) => s.slug !== "clinical-documentation").slice(0, 3);
+  return <ServicePage service={service} others={others} />;
 }

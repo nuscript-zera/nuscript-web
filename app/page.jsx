@@ -1,8 +1,9 @@
-import HeroSection from "@/components/home/HeroSection";
-import ServicesSection from "@/components/home/ServicesSection";
-import PlatformSection from "@/components/home/PlatformSection";
-import LegacySection from "@/components/home/LegacySection";
-import CTABox from "@/components/CTABox";
+import FloatingNav from "@/components/FloatingNav";
+import Hero from "@/components/Hero";
+import ServicesGallery from "@/components/ServicesGallery";
+import SpecialtiesMarquee from "@/components/SpecialtiesMarquee";
+import ScienceOfCare from "@/components/ScienceOfCare";
+import CtaBand from "@/components/CtaBand";
 
 export const metadata = {
   description:
@@ -12,19 +13,16 @@ export const metadata = {
 
 export default function HomePage() {
   return (
-    <div className="overflow-hidden">
-      <HeroSection />
-      <ServicesSection />
-      <PlatformSection />
-      <LegacySection />
-      <section className="max-w-7xl mx-auto px-6 lg:px-8">
-        <CTABox
-          heading="Ready to Transform Your Healthcare Operations?"
-          description="Join healthcare providers using NuScript for accurate documentation, compliant coding, and accelerated revenue cycle. Let's show you how."
-          primaryButtonText="Schedule a Consultation"
-          secondaryButtonText="Talk With Our Team"
-        />
-      </section>
-    </div>
+    <main>
+      <FloatingNav />
+      <Hero />
+      <ServicesGallery />
+      <SpecialtiesMarquee />
+      <ScienceOfCare />
+      <CtaBand
+        title="Ready to transform your healthcare operations?"
+        subtitle="Join providers using NuScript for accurate documentation, compliant coding, and accelerated revenue cycle."
+      />
+    </main>
   );
 }

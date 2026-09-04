@@ -1,4 +1,4 @@
-import GenericHero from "@/components/GenericHero";
+import LegalPage from "@/components/LegalPage";
 
 export const metadata = {
   title: "Terms of Use",
@@ -21,7 +21,7 @@ const sections = [
   {
     title: "Intellectual Property",
     content:
-      'All content on the Site—including text, graphics, logos, icons, images, and design elements—is owned by or licensed to NuScript and is protected by applicable copyright, trademark, and other intellectual property laws.\n\nYou may view, download, or print limited portions of the Site for your own internal, non‑commercial use, provided you do not remove any proprietary notices. Any other use, reproduction, distribution, modification, or creation of derivative works requires our prior written permission.\n\n"NuScript" and any associated logos or service names are trademarks or service marks of NuScript Data Solutions Private Limited or its affiliates. Unauthorized use is prohibited.',
+      'All content on the Site—including text, graphics, logos, icons, images, and design elements—is owned by or licensed to NuScript and is protected by applicable copyright, trademark, and other intellectual property laws.\n\nYou may view, download, or print limited portions of the Site for your own internal, non‑commercial use, provided you do not remove any proprietary notices. Any other use requires our prior written permission.\n\n"NuScript" and any associated logos or service names are trademarks or service marks of NuScript Data Solutions Private Limited or its affiliates.',
   },
   {
     title: "Privacy",
@@ -41,7 +41,7 @@ const sections = [
   {
     title: "Limitation of Liability",
     content:
-      "To the maximum extent permitted by applicable law, NuScript and its directors, officers, employees, and agents will not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or related to your use of, or inability to use, the Site or its content, even if we have been advised of the possibility of such damages.\n\nOur total aggregate liability arising out of or relating to your use of the Site will not exceed the amount, if any, you paid to use the Site.",
+      "To the maximum extent permitted by applicable law, NuScript and its directors, officers, employees, and agents will not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or related to your use of, or inability to use, the Site or its content.\n\nOur total aggregate liability arising out of or relating to your use of the Site will not exceed the amount, if any, you paid to use the Site.",
   },
   {
     title: "Indemnification",
@@ -49,14 +49,9 @@ const sections = [
       "You agree to indemnify, defend, and hold harmless NuScript and its directors, officers, employees, and agents from and against any claims, liabilities, damages, losses, and expenses (including reasonable attorneys' fees) arising out of or related to your use of the Site or any violation of these Terms.",
   },
   {
-    title: "Changes to the Site and These Terms",
-    content:
-      "We may update, modify, or discontinue any part of the Site at any time without notice. We may also revise these Terms from time to time. When we do, we will update the Effective Date above. Your continued use of the Site after changes are posted constitutes your acceptance of the revised Terms.",
-  },
-  {
     title: "Governing Law and Jurisdiction",
     content:
-      "These Terms and your use of the Site are governed by the laws of India, without regard to its conflict‑of‑laws principles. Any disputes arising out of or relating to these Terms or the Site shall be subject to the exclusive jurisdiction of the courts located in Coimbatore, Tamil Nadu, India, or another appropriate forum as determined by applicable law.",
+      "These Terms and your use of the Site are governed by the laws of India, without regard to its conflict‑of‑laws principles. Any disputes arising out of or relating to these Terms or the Site shall be subject to the exclusive jurisdiction of the courts located in Coimbatore, Tamil Nadu, India.",
   },
   {
     title: "Contact Us",
@@ -65,81 +60,13 @@ const sections = [
   },
 ];
 
-function RichText({ text }) {
-  return (
-    <>
-      {text.split("\n").map((line, lineIdx) => {
-        if (line.trim().startsWith("•")) {
-          return (
-            <div key={lineIdx} className="flex gap-3 mb-2">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#2563eb] mt-2 flex-shrink-0" />
-              <span>{line.trim().substring(1).trim()}</span>
-            </div>
-          );
-        }
-        if (line.includes("hello@nuscript.net")) {
-          const parts = line.split("hello@nuscript.net");
-          return (
-            <p key={lineIdx} className="mb-2">
-              {parts[0]}
-              <a href="mailto:hello@nuscript.net" className="text-[#2563eb] hover:underline">
-                hello@nuscript.net
-              </a>
-              {parts[1]}
-            </p>
-          );
-        }
-        return line.trim() ? (
-          <p key={lineIdx} className="mb-2">
-            {line}
-          </p>
-        ) : (
-          <div key={lineIdx} className="h-2" />
-        );
-      })}
-    </>
-  );
-}
-
 export default function TermsOfUsePage() {
   return (
-    <div>
-      <GenericHero
-        title="Terms of Use"
-        description="Please read these Terms of Use carefully before using our website."
-        primaryButtonText="Contact Us"
-        isSmall={true}
-      />
-
-      <div className="max-w-4xl mx-auto px-6 lg:px-8 py-20">
-        <div className="mb-8">
-          <p style={{ fontWeight: 400, fontSize: "16px" }} className="text-gray-600">
-            Effective Date: January 18, 2026
-          </p>
-        </div>
-
-        <div className="mb-12">
-          <p style={{ fontWeight: 400, fontSize: "16px", lineHeight: "1.8" }} className="text-gray-700">
-            Welcome to the website of NuScript Data Solutions Private Limited
-            ("NuScript", "we", "us", or "our"). By accessing or using this website
-            (the "Site"), you agree to be bound by these Terms of Use ("Terms").
-            If you do not agree to these Terms, please do not use the Site.
-          </p>
-        </div>
-
-        <div className="space-y-12">
-          {sections.map((section, idx) => (
-            <div key={idx}>
-              <h2 style={{ fontWeight: 500, fontSize: "24px", lineHeight: "1.3" }} className="text-[#222733] mb-4">
-                {idx + 1}. {section.title}
-              </h2>
-              <div style={{ fontWeight: 400, fontSize: "16px", lineHeight: "1.8" }} className="text-gray-700">
-                <RichText text={section.content} />
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
+    <LegalPage
+      title="Terms of Use"
+      effective="Effective January 18, 2026"
+      intro='Welcome to the website of NuScript Data Solutions Private Limited ("NuScript", "we", "us", or "our"). By accessing or using this website (the "Site"), you agree to be bound by these Terms of Use. If you do not agree to these Terms, please do not use the Site.'
+      sections={sections}
+    />
   );
 }

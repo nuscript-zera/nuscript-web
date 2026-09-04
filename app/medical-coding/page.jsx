@@ -1,4 +1,5 @@
-import MedicalCodingContent from "@/components/pages/MedicalCodingContent";
+import ServicePage from "@/components/ServicePage";
+import { getService, SERVICES } from "@/lib/services";
 
 export const metadata = {
   title: "Medical Coding Services",
@@ -8,5 +9,7 @@ export const metadata = {
 };
 
 export default function Page() {
-  return <MedicalCodingContent />;
+  const service = getService("medical-coding");
+  const others = SERVICES.filter((s) => s.slug !== "medical-coding").slice(0, 3);
+  return <ServicePage service={service} others={others} />;
 }
