@@ -37,7 +37,7 @@ export default function LegacySection() {
             >
               Our Journey
             </span>
-            <h2 style={{ fontWeight: 400, fontSize: "36px" }} className="text-slate-900 mb-6">
+            <h2 style={{ fontWeight: 500, fontSize: "36px" }} className="text-slate-900 mb-6">
               25 Years of
               <span className="block text-[#2563eb]">Healthcare Excellence</span>
             </h2>
@@ -65,7 +65,7 @@ export default function LegacySection() {
                     <span className="text-xs font-semibold text-white">{milestone.year}</span>
                   </div>
                   <div className="pt-2">
-                    <h3 style={{ fontWeight: 400, fontSize: "18px" }} className="text-slate-900">
+                    <h3 style={{ fontWeight: 500, fontSize: "18px" }} className="text-slate-900">
                       {milestone.title}
                     </h3>
                     <p style={{ fontWeight: 400, fontSize: "16px" }} className="text-slate-600">
@@ -83,7 +83,7 @@ export default function LegacySection() {
             viewport={{ once: true }}
           >
             <div className="bg-white rounded-3xl p-10 shadow-xl shadow-blue-500/5 border border-blue-100">
-              <h3 style={{ fontWeight: 400, fontSize: "24px" }} className="text-slate-900 mb-8">
+              <h3 style={{ fontWeight: 500, fontSize: "24px" }} className="text-slate-900 mb-8">
                 Why Healthcare Providers Trust NuScript
               </h3>
 

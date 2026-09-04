@@ -69,7 +69,7 @@ export default function Footer() {
 
           {Object.entries(footerLinks).map(([category, links]) => (
             <div key={category}>
-              <h3 style={{ fontWeight: 400, fontSize: "16px" }} className="mb-4">
+              <h3 style={{ fontWeight: 500, fontSize: "16px" }} className="mb-4">
                 {category}
               </h3>
               <ul className="space-y-3">

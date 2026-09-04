@@ -105,7 +105,7 @@ export default function ContactContent() {
               >
                 <info.icon className="w-6 h-6 text-white" />
               </div>
-              <h3 style={{ fontWeight: 400, fontSize: "18px" }} className="text-[#222733] mb-2">
+              <h3 style={{ fontWeight: 500, fontSize: "18px" }} className="text-[#222733] mb-2">
                 {info.title}
               </h3>
               {info.company && (
@@ -159,7 +159,7 @@ export default function ContactContent() {
                 >
                   Get Started
                 </span>
-                <h2 style={{ fontWeight: 400, fontSize: "40px", lineHeight: "1.2" }} className="text-[#222733]">
+                <h2 style={{ fontWeight: 500, fontSize: "40px", lineHeight: "1.2" }} className="text-[#222733]">
                   Ready to Transform
                   <br />
                   <span className="text-[#2563eb]">Your Operations?</span>
@@ -181,7 +181,7 @@ export default function ContactContent() {
               viewport={{ once: true }}
               className="bg-white rounded-2xl p-6 border border-blue-100 shadow-lg shadow-blue-500/10"
             >
-              <h3 style={{ fontWeight: 400, fontSize: "20px" }} className="text-[#222733] mb-4">
+              <h3 style={{ fontWeight: 500, fontSize: "20px" }} className="text-[#222733] mb-4">
                 Schedule a Demo
               </h3>
 

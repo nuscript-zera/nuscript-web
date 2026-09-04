@@ -127,7 +127,7 @@ export default function PrivacyPolicyPage() {
         <div className="space-y-12">
           {sections.map((section, idx) => (
             <div key={idx}>
-              <h2 style={{ fontWeight: 400, fontSize: "24px", lineHeight: "1.3" }} className="text-[#222733] mb-4">
+              <h2 style={{ fontWeight: 500, fontSize: "24px", lineHeight: "1.3" }} className="text-[#222733] mb-4">
                 {idx + 1}. {section.title}
               </h2>
 
@@ -135,7 +135,7 @@ export default function PrivacyPolicyPage() {
                 <div className="space-y-6">
                   {section.subsections.map((subsection, subIdx) => (
                     <div key={subIdx}>
-                      <h3 style={{ fontWeight: 400, fontSize: "16px" }} className="text-gray-800 mb-2">
+                      <h3 style={{ fontWeight: 500, fontSize: "16px" }} className="text-gray-800 mb-2">
                         {subsection.subtitle}
                       </h3>
                       <div style={{ fontWeight: 400, fontSize: "16px", lineHeight: "1.8" }} className="text-gray-700">

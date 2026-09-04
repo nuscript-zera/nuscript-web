@@ -66,7 +66,7 @@ export default function MedicalCodingContent() {
 
         <section className="max-w-7xl mx-auto px-6 lg:px-8 py-24">
           <div className="text-center mb-16">
-            <h2 style={{ fontWeight: 400, fontSize: "36px", lineHeight: "1.3" }} className="text-[#222733] mb-6">
+            <h2 style={{ fontWeight: 500, fontSize: "36px", lineHeight: "1.3" }} className="text-[#222733] mb-6">
               How Our Coding Team Works
             </h2>
             <p style={{ fontWeight: 400, fontSize: "16px", lineHeight: "1.6" }} className="text-gray-700 max-w-2xl mx-auto">
@@ -87,7 +87,7 @@ export default function MedicalCodingContent() {
                 <div className="text-4xl font-semibold text-[#6200EA] mb-4" style={{ fontWeight: 400 }}>
                   {step.number}
                 </div>
-                <h3 style={{ fontWeight: 400, fontSize: "20px" }} className="text-[#222733] mb-3">
+                <h3 style={{ fontWeight: 500, fontSize: "20px" }} className="text-[#222733] mb-3">
                   {step.title}
                 </h3>
                 <p style={{ fontWeight: 400, fontSize: "16px", lineHeight: "1.6" }} className="text-gray-600">
@@ -101,7 +101,7 @@ export default function MedicalCodingContent() {
         <section className="bg-gradient-to-br from-violet-50 to-blue-50 py-24">
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 style={{ fontWeight: 400, fontSize: "36px", lineHeight: "1.3" }} className="text-[#222733] mb-6">
+              <h2 style={{ fontWeight: 500, fontSize: "36px", lineHeight: "1.3" }} className="text-[#222733] mb-6">
                 Benefits of NuScript's Medical Coding Services
               </h2>
             </div>

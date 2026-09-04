@@ -10,7 +10,7 @@ export default function NotFound() {
     <div className="min-h-[70vh] flex items-center justify-center p-6 bg-slate-50">
       <div className="max-w-md w-full text-center space-y-6">
         <div className="space-y-2">
-          <h1 className="text-7xl font-light text-slate-300">404</h1>
+          <h1 className="text-7xl font-normal text-slate-300">404</h1>
           <div className="h-0.5 w-16 bg-slate-200 mx-auto" />
         </div>
         <div className="space-y-3">

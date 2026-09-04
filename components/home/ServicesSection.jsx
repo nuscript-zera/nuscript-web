@@ -63,7 +63,7 @@ export default function ServicesSection() {
           >
             Our Services
           </span>
-          <h2 style={{ fontWeight: 400, fontSize: "36px" }} className="text-slate-900 mb-6">
+          <h2 style={{ fontWeight: 500, fontSize: "36px" }} className="text-slate-900 mb-6">
             From Documentation to Revenue,
             <span className="block text-[#2563eb]">Seamlessly Connected</span>
           </h2>

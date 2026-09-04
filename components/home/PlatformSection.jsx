@@ -43,7 +43,7 @@ export default function PlatformSection() {
             >
               Why NuScript
             </span>
-            <h2 style={{ fontWeight: 400, fontSize: "36px" }} className="text-white mb-6 leading-tight">
+            <h2 style={{ fontWeight: 500, fontSize: "36px" }} className="text-white mb-6 leading-tight">
               Expertise + Technology,
               <span className="block text-[#0d9488]">Working Together</span>
             </h2>
