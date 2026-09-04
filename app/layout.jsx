@@ -5,12 +5,12 @@ import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 
-// Self-hosted General Sans (variable, weights 200–700). next/font handles the
+// Self-hosted Sora (variable, weights 100–800). next/font handles the
 // @font-face, hashing, and <link rel=preload> automatically — no CDN, no FOUT.
-const generalSans = localFont({
-  src: "./fonts/GeneralSans-Variable.woff2",
-  variable: "--font-general-sans",
-  weight: "200 700",
+const sora = localFont({
+  src: "./fonts/Sora-Variable.woff2",
+  variable: "--font-sora",
+  weight: "100 800",
   display: "swap",
 });
 
@@ -63,7 +63,7 @@ export const viewport = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={generalSans.variable}>
+    <html lang="en" className={sora.variable}>
       <body>
         <Nav />
         <main className="pt-20">{children}</main>

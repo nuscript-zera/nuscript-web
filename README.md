@@ -11,7 +11,7 @@ static site, deployed on **Cloudflare Pages** and served at
   ships as prerendered HTML with its own `<title>`, meta description, and canonical
   URL for proper SEO.
 - **Tailwind CSS** for styling.
-- **General Sans** — self-hosted via `next/font/local` (no external font CDN).
+- **Sora** — self-hosted via `next/font/local` (no external font CDN).
 - **framer-motion** for animations, **lucide-react** for icons, **sonner** for toasts.
 
 ## Local development
@@ -50,7 +50,7 @@ app/                     App Router: one folder per route
   robots.js              Generates /robots.txt
   sitemap.js             Generates /sitemap.xml
   globals.css            Tailwind + design tokens + type scale
-  fonts/                 Self-hosted General Sans variable font
+  fonts/                 Self-hosted Sora variable font
 components/              Nav, Footer, GenericHero, CTABox, home/, about/, pages/, ui/
 lib/utils.js            cn() helper + createPageUrl() route map
 public/                 Images (WebP), logos, favicon, _redirects

@@ -34,12 +34,12 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: var(--font-general-sans), -apple-system, BlinkMacSystemFont,
+    font-family: var(--font-sora), -apple-system, BlinkMacSystemFont,
       "Segoe UI", sans-serif;
     font-weight: 400;
   }
 
-  /* Form controls don't inherit font-family by default — force General Sans. */
+  /* Form controls don't inherit font-family by default — force Sora. */
   input,
   textarea,
   button,
@@ -48,8 +48,8 @@
   }
 }
 
-/* Typography scale — General Sans used light and editorial: regular (400) body
-   and section headings, medium (500) hero headlines and small labels. No bold.
+/* Typography scale — Sora used light and editorial: regular (400) body,
+   medium (500) headings and hero, plus small labels. No bold.
    Most on-page elements set their own inline size/weight; these back them up. */
 @layer base {
   h1 {
