@@ -27,10 +27,6 @@ export default function SiteHeader() {
         </Link>
 
         <nav className="hidden items-center gap-7 md:flex">
-          <Link href="/" className={navClass("/")}>
-            Home
-          </Link>
-
           <div
             className="relative"
             onMouseEnter={() => setServicesOpen(true)}
@@ -69,16 +65,10 @@ export default function SiteHeader() {
             href="https://app.audryl.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-ui text-[13px] font-medium tracking-wide text-ink/55 transition-colors hover:text-ink"
+            className="rounded-full bg-ink px-5 py-2 font-ui text-[13px] font-medium text-bone transition-colors hover:bg-plasma hover:text-ink"
           >
             Login
           </a>
-          <Link
-            href="/contact"
-            className="rounded-full bg-ink px-5 py-2 font-ui text-[13px] font-medium text-bone transition-colors hover:bg-plasma hover:text-ink"
-          >
-            Consultation
-          </Link>
         </nav>
 
         <button
@@ -93,17 +83,15 @@ export default function SiteHeader() {
       {mobileOpen && (
         <div className="border-t border-ink/10 bg-bone px-6 py-4 md:hidden">
           <ul className="space-y-1">
-            <li>
-              <Link href="/" onClick={() => setMobileOpen(false)} className="block py-2 font-ui text-sm text-ink">
-                Home
-              </Link>
+            <li className="pt-1">
+              <span className="font-ui text-[11px] uppercase tracking-wider text-sage">Services</span>
             </li>
             {SERVICES.map((s) => (
               <li key={s.slug}>
                 <Link
                   href={`/${s.slug}`}
                   onClick={() => setMobileOpen(false)}
-                  className="block py-2 font-ui text-sm text-ink/75"
+                  className="block py-2 pl-3 font-ui text-sm text-ink/75"
                 >
                   {s.title}
                 </Link>
@@ -119,12 +107,12 @@ export default function SiteHeader() {
                 Contact
               </Link>
             </li>
-            <li>
+            <li className="pt-2">
               <a
                 href="https://app.audryl.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block py-2 font-ui text-sm text-ink"
+                className="inline-block rounded-full bg-ink px-5 py-2 font-ui text-sm font-medium text-bone"
               >
                 Login
               </a>

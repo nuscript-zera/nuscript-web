@@ -1,6 +1,7 @@
 import FloatingNav from "@/components/FloatingNav";
 import Hero from "@/components/Hero";
 import ServicesGallery from "@/components/ServicesGallery";
+import WhyNuScript from "@/components/WhyNuScript";
 import SpecialtiesMarquee from "@/components/SpecialtiesMarquee";
 import ScienceOfCare from "@/components/ScienceOfCare";
 import CtaBand from "@/components/CtaBand";
@@ -17,6 +18,7 @@ export default function HomePage() {
       <FloatingNav />
       <Hero />
       <ServicesGallery />
+      <WhyNuScript />
       <SpecialtiesMarquee />
       <ScienceOfCare />
       <CtaBand

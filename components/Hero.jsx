@@ -12,7 +12,7 @@ const STATS = [
 
 export default function Hero() {
   return (
-    <section id="formula" className="relative min-h-screen overflow-hidden bg-transparent pt-20">
+    <section id="formula" className="relative min-h-screen snap-start overflow-hidden bg-bone pt-20">
       <span className="pointer-events-none absolute -right-6 top-24 select-none font-heading text-[28vw] leading-none text-ink/[0.04] md:text-[20vw]">
         Rx
       </span>
@@ -73,8 +73,9 @@ export default function Hero() {
           className="relative z-20 mt-2 max-w-md font-body text-lg leading-relaxed text-ink/70 animate-rise"
           style={{ animationDelay: "0.4s" }}
         >
-          From the moment a clinician speaks to the moment revenue hits your account —
-          transcription, scribing, coding, and RCM compounded into one accurate, compliant workflow.
+          25+ years of healthcare documentation expertise. From medical transcription and scribing
+          to coding and RCM — NuScript delivers accurate documentation, cleaner claims, and faster
+          revenue for U.S. healthcare providers.
         </p>
 
         <div

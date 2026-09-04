@@ -80,6 +80,44 @@ export default function ServicePage({ service, others }) {
         </div>
       </section>
 
+      {service.chips && (
+        <section className="bg-bone py-16 md:py-24">
+          <div className="mx-auto max-w-[1400px] px-6 md:px-12">
+            <div className="border-b border-ink/10 pb-6">
+              <span className="micro-label text-sage">{service.chips.label}</span>
+            </div>
+            <div className="flex flex-wrap gap-3 pt-10">
+              {service.chips.items.map((c) => (
+                <span
+                  key={c}
+                  className="rounded-full border border-ink/15 px-5 py-2.5 font-ui text-sm text-ink/75 transition-colors hover:border-plasma hover:text-ink"
+                >
+                  {c}
+                </span>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {service.benefits && service.benefits.length > 0 && (
+        <section className="bg-bone py-16 md:py-24">
+          <div className="mx-auto max-w-[1400px] px-6 md:px-12">
+            <div className="border-b border-ink/10 pb-6">
+              <span className="micro-label text-sage">Why choose NuScript</span>
+            </div>
+            <div className="grid grid-cols-1 gap-x-12 gap-y-5 pt-10 sm:grid-cols-2 lg:grid-cols-3">
+              {service.benefits.map((b) => (
+                <div key={b} className="flex items-start gap-3 border-t border-ink/10 pt-4">
+                  <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-plasma" />
+                  <p className="font-body text-[15px] leading-relaxed text-ink/75">{b}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {others && others.length > 0 && (
         <section className="bg-bone pb-16 md:pb-24">
           <div className="mx-auto max-w-[1400px] px-6 md:px-12">

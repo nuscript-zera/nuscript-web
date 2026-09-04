@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import SpecialtiesMarquee from "@/components/SpecialtiesMarquee";
+import WhoNuScriptIs from "@/components/WhoNuScriptIs";
+import WhatNuScriptDoes from "@/components/WhatNuScriptDoes";
+import ValuesInAction from "@/components/ValuesInAction";
 import Journey from "@/components/Journey";
-import WhyNuScript from "@/components/WhyNuScript";
 import CtaBand from "@/components/CtaBand";
 
 export const metadata = {
@@ -56,8 +58,10 @@ export default function AboutPage() {
       </section>
 
       <SpecialtiesMarquee />
+      <WhoNuScriptIs />
+      <WhatNuScriptDoes />
+      <ValuesInAction />
       <Journey />
-      <WhyNuScript />
       <CtaBand
         title="Why providers trust NuScript."
         subtitle="Scalable teams, specialty-specific expertise, and transparent reporting — all from one partner."
