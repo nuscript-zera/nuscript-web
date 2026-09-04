@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-general-sans), -apple-system, BlinkMacSystemFont,
+      "Segoe UI", sans-serif;
+    font-weight: 400;
+  }
+
+  /* Form controls don't inherit font-family by default — force General Sans. */
+  input,
+  textarea,
+  button,
+  select {
+    font-family: inherit;
+  }
+}
+
+/* Typography scale — General Sans is used at its natural weights: regular body,
+   semibold (600) headings as the top of the ramp, and no faux-bold. The variable
+   font tops out at 700, so nothing is pushed past semibold. Most on-page elements
+   set their own inline size/weight; these are the defaults that back them up. */
+@layer base {
+  h1 {
+    font-weight: 600;
+    font-size: 64px;
+    letter-spacing: -0.03em;
+    line-height: 1.2;
+  }
+  h2 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.3;
+  }
+  h3 {
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  body,
+  p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  small,
+  [data-caption] {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .tabular-figures {
+    font-variant-numeric: tabular-nums;
+  }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 48px;
+    }
+    h2 {
+      font-size: 28px;
+    }
+    body,
+    p {
+      font-size: 16px;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+# 301 redirects from the old Base44 CamelCase URLs to the new clean paths.
+# Keeps any existing inbound links and search-engine results working.
+/About                     /about                        301
+/Contact                   /contact                      301
+/ClinicalDocumentation     /clinical-documentation       301
+/MedicoLegalTranscription  /medico-legal-transcription   301
+/MedicalCoding             /medical-coding               301
+/RevenueCycleManagement    /revenue-cycle-management     301
+/PrivacyPolicy             /privacy-policy               301
+/TermsOfUse                /terms-of-use                 301
