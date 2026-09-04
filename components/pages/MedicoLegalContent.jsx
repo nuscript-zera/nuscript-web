@@ -75,7 +75,7 @@ export default function MedicoLegalContent() {
 
         <section className="max-w-7xl mx-auto px-6 lg:px-8 py-24">
           <div className="text-center mb-16">
-            <h2 style={{ fontWeight: 600, fontSize: "36px", lineHeight: "1.3" }} className="text-[#222733] mb-6">
+            <h2 style={{ fontWeight: 400, fontSize: "36px", lineHeight: "1.3" }} className="text-[#222733] mb-6">
               Our Medico-Legal Workflow
             </h2>
             <p style={{ fontWeight: 400, fontSize: "16px", lineHeight: "1.6" }} className="text-gray-700 max-w-2xl mx-auto">
@@ -93,10 +93,10 @@ export default function MedicoLegalContent() {
                 transition={{ delay: idx * 0.1 }}
                 className="bg-white rounded-2xl p-8 border border-gray-100 hover:border-teal-200 hover:shadow-lg transition-all"
               >
-                <div className="text-4xl font-semibold text-[#2563EB] mb-4" style={{ fontWeight: 600 }}>
+                <div className="text-4xl font-semibold text-[#2563EB] mb-4" style={{ fontWeight: 400 }}>
                   {step.number}
                 </div>
-                <h3 style={{ fontWeight: 600, fontSize: "20px" }} className="text-[#222733] mb-3">
+                <h3 style={{ fontWeight: 400, fontSize: "20px" }} className="text-[#222733] mb-3">
                   {step.title}
                 </h3>
                 <p style={{ fontWeight: 400, fontSize: "16px", lineHeight: "1.6" }} className="text-gray-600">
@@ -110,7 +110,7 @@ export default function MedicoLegalContent() {
         <section className="bg-gradient-to-br from-teal-50 to-teal-50 py-24">
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 style={{ fontWeight: 600, fontSize: "36px", lineHeight: "1.3" }} className="text-[#222733] mb-6">
+              <h2 style={{ fontWeight: 400, fontSize: "36px", lineHeight: "1.3" }} className="text-[#222733] mb-6">
                 Document Types We Handle
               </h2>
             </div>
@@ -137,7 +137,7 @@ export default function MedicoLegalContent() {
 
         <section className="max-w-7xl mx-auto px-6 lg:px-8 py-24">
           <div className="text-center mb-16">
-            <h2 style={{ fontWeight: 600, fontSize: "36px", lineHeight: "1.3" }} className="text-[#222733] mb-6">
+            <h2 style={{ fontWeight: 400, fontSize: "36px", lineHeight: "1.3" }} className="text-[#222733] mb-6">
               Why Choose NuScript for Medico-Legal
             </h2>
           </div>
@@ -157,7 +157,7 @@ export default function MedicoLegalContent() {
                   <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-teal-100 to-teal-100 flex items-center justify-center mb-4">
                     <Icon className="w-6 h-6 text-[#2563EB]" />
                   </div>
-                  <h3 style={{ fontWeight: 600, fontSize: "18px" }} className="text-[#222733] mb-2">
+                  <h3 style={{ fontWeight: 400, fontSize: "18px" }} className="text-[#222733] mb-2">
                     {benefit.title}
                   </h3>
                   <p style={{ fontWeight: 400, fontSize: "14px", lineHeight: "1.6" }} className="text-gray-600">

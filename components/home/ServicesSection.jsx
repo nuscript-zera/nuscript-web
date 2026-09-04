@@ -63,7 +63,7 @@ export default function ServicesSection() {
           >
             Our Services
           </span>
-          <h2 style={{ fontWeight: 600, fontSize: "36px" }} className="text-slate-900 mb-6">
+          <h2 style={{ fontWeight: 400, fontSize: "36px" }} className="text-slate-900 mb-6">
             From Documentation to Revenue,
             <span className="block text-[#2563eb]">Seamlessly Connected</span>
           </h2>
@@ -95,7 +95,7 @@ export default function ServicesSection() {
                   </div>
 
                   <h3
-                    style={{ fontWeight: 600, fontSize: "24px" }}
+                    style={{ fontWeight: 400, fontSize: "24px" }}
                     className="text-slate-900 mb-3 group-hover:text-[#2563eb] transition-colors"
                   >
                     {service.title}
@@ -120,7 +120,7 @@ export default function ServicesSection() {
                   </div>
 
                   <div
-                    style={{ fontWeight: 600 }}
+                    style={{ fontWeight: 400 }}
                     className="flex items-center text-[#2563eb] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                   >
                     <span>Learn more</span>

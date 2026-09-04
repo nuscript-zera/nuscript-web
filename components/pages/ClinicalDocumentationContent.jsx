@@ -108,7 +108,7 @@ export default function ClinicalDocumentationContent() {
                 <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center mb-6">
                   <service.icon className="w-7 h-7 text-white" />
                 </div>
-                <h3 style={{ fontWeight: 600, fontSize: "24px" }} className="text-slate-900 mb-3">
+                <h3 style={{ fontWeight: 400, fontSize: "24px" }} className="text-slate-900 mb-3">
                   {service.title}
                 </h3>
                 <p style={{ fontWeight: 400, fontSize: "16px", lineHeight: "1.6" }} className="text-slate-600 mb-6">
@@ -129,7 +129,7 @@ export default function ClinicalDocumentationContent() {
         <section className="bg-gradient-to-br from-blue-50 to-indigo-50 py-24">
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 style={{ fontWeight: 600, fontSize: "36px", lineHeight: "1.3" }} className="text-[#222733] mb-6">
+              <h2 style={{ fontWeight: 400, fontSize: "36px", lineHeight: "1.3" }} className="text-[#222733] mb-6">
                 Our Documentation Workflow
               </h2>
               <p style={{ fontWeight: 400, fontSize: "16px", lineHeight: "1.6" }} className="text-gray-700 max-w-2xl mx-auto">
@@ -147,10 +147,10 @@ export default function ClinicalDocumentationContent() {
                   transition={{ delay: idx * 0.1 }}
                   className="bg-white rounded-2xl p-6 border border-gray-100 hover:border-blue-200 hover:shadow-lg transition-all"
                 >
-                  <div className="text-3xl font-semibold text-[#2563eb] mb-3" style={{ fontWeight: 600 }}>
+                  <div className="text-3xl font-semibold text-[#2563eb] mb-3" style={{ fontWeight: 400 }}>
                     {step.number}
                   </div>
-                  <h3 style={{ fontWeight: 600, fontSize: "18px" }} className="text-[#222733] mb-2">
+                  <h3 style={{ fontWeight: 400, fontSize: "18px" }} className="text-[#222733] mb-2">
                     {step.title}
                   </h3>
                   <p style={{ fontWeight: 400, fontSize: "14px", lineHeight: "1.6" }} className="text-gray-600">
@@ -164,7 +164,7 @@ export default function ClinicalDocumentationContent() {
 
         <section className="max-w-7xl mx-auto px-6 lg:px-8 py-24">
           <div className="text-center mb-12">
-            <h2 style={{ fontWeight: 600, fontSize: "36px", lineHeight: "1.3" }} className="text-[#222733] mb-6">
+            <h2 style={{ fontWeight: 400, fontSize: "36px", lineHeight: "1.3" }} className="text-[#222733] mb-6">
               40+ Specialties Covered
             </h2>
           </div>
@@ -184,7 +184,7 @@ export default function ClinicalDocumentationContent() {
         <section className="bg-gradient-to-br from-blue-50 to-indigo-50 py-24">
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 style={{ fontWeight: 600, fontSize: "36px", lineHeight: "1.3" }} className="text-[#222733] mb-6">
+              <h2 style={{ fontWeight: 400, fontSize: "36px", lineHeight: "1.3" }} className="text-[#222733] mb-6">
                 Why Choose NuScript for Documentation
               </h2>
             </div>

@@ -35,7 +35,7 @@ export default function WhoNuScriptIs() {
               Our Foundation
             </span>
           </div>
-          <h3 style={{ fontWeight: 600, fontSize: "40px", lineHeight: "1.2" }} className="text-slate-900 mb-6">
+          <h3 style={{ fontWeight: 400, fontSize: "40px", lineHeight: "1.2" }} className="text-slate-900 mb-6">
             Who NuScript Is
           </h3>
           <p
@@ -55,7 +55,7 @@ export default function WhoNuScriptIs() {
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
         >
-          <h4 style={{ fontWeight: 600, fontSize: "16px" }} className="text-slate-900 mb-6">
+          <h4 style={{ fontWeight: 400, fontSize: "16px" }} className="text-slate-900 mb-6">
             Specialties Served
           </h4>
           <div className="flex flex-wrap gap-3">

@@ -44,7 +44,7 @@ export default function HeroSection() {
 
             <h1
               style={{
-                fontWeight: 600,
+                fontWeight: 500,
                 fontSize: "clamp(36px, 8vw, 64px)",
                 letterSpacing: "-0.03em",
               }}
@@ -100,7 +100,7 @@ export default function HeroSection() {
               </p>
               <div className="flex items-center gap-8">
                 <div className="text-center">
-                  <p style={{ fontWeight: 600, fontSize: "32px" }} className="text-slate-900">
+                  <p style={{ fontWeight: 400, fontSize: "32px" }} className="text-slate-900">
                     25+
                   </p>
                   <p style={{ fontWeight: 500, fontSize: "14px" }} className="text-slate-600">
@@ -109,7 +109,7 @@ export default function HeroSection() {
                 </div>
                 <div className="w-px h-12 bg-gray-200" />
                 <div className="text-center">
-                  <p style={{ fontWeight: 600, fontSize: "32px" }} className="text-slate-900">
+                  <p style={{ fontWeight: 400, fontSize: "32px" }} className="text-slate-900">
                     99.5%
                   </p>
                   <p style={{ fontWeight: 500, fontSize: "14px" }} className="text-slate-600">
@@ -118,7 +118,7 @@ export default function HeroSection() {
                 </div>
                 <div className="w-px h-12 bg-gray-200" />
                 <div className="text-center">
-                  <p style={{ fontWeight: 600, fontSize: "32px" }} className="text-slate-900">
+                  <p style={{ fontWeight: 400, fontSize: "32px" }} className="text-slate-900">
                     40+
                   </p>
                   <p style={{ fontWeight: 500, fontSize: "14px" }} className="text-slate-600">
@@ -159,7 +159,7 @@ export default function HeroSection() {
                   </svg>
                 </div>
                 <div>
-                  <p style={{ fontWeight: 600, fontSize: "16px" }} className="text-slate-900">
+                  <p style={{ fontWeight: 400, fontSize: "16px" }} className="text-slate-900">
                     99.5%
                   </p>
                   <p style={{ fontWeight: 500, fontSize: "11px" }} className="text-slate-500">
@@ -181,7 +181,7 @@ export default function HeroSection() {
                   </svg>
                 </div>
                 <div>
-                  <p style={{ fontWeight: 600, fontSize: "16px" }} className="text-slate-900">
+                  <p style={{ fontWeight: 400, fontSize: "16px" }} className="text-slate-900">
                     HIPAA
                   </p>
                   <p style={{ fontWeight: 500, fontSize: "11px" }} className="text-slate-500">

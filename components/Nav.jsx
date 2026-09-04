@@ -100,12 +100,12 @@ export default function Nav() {
 
           <div className="hidden lg:flex items-center gap-4">
             <a
-              href="https://app.medscribeai.in"
+              href="https://app.audryl.com"
               target="_blank"
               rel="noopener noreferrer"
             >
               <Button
-                style={{ fontWeight: 600, fontSize: "14px" }}
+                style={{ fontWeight: 400, fontSize: "14px" }}
                 className="bg-[#2563eb] hover:bg-blue-700 text-white rounded-xl px-6"
               >
                 Login
@@ -167,7 +167,7 @@ export default function Nav() {
               ))}
               <div className="pt-4 space-y-3">
                 <a
-                  href="https://app.medscribeai.in"
+                  href="https://app.audryl.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block"

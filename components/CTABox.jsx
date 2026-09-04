@@ -26,7 +26,7 @@ export default function CTABox({
     >
       <div className="max-w-3xl">
         <h3
-          style={{ fontWeight: 600, fontSize: "32px", lineHeight: "1.3" }}
+          style={{ fontWeight: 400, fontSize: "32px", lineHeight: "1.3" }}
           className="text-slate-900 mb-4"
         >
           {heading}
@@ -43,7 +43,7 @@ export default function CTABox({
             <Button
               onClick={onPrimaryClick}
               className="bg-[#2563eb] hover:bg-blue-700 text-white rounded-full px-6 py-3"
-              style={{ fontWeight: 600, fontSize: "15px" }}
+              style={{ fontWeight: 400, fontSize: "15px" }}
             >
               {primaryButtonText}
               <ArrowRight className="ml-2 w-4 h-4" />
@@ -52,7 +52,7 @@ export default function CTABox({
             <Button
               asChild
               className="bg-[#2563eb] hover:bg-blue-700 text-white rounded-full px-6 py-3"
-              style={{ fontWeight: 600, fontSize: "15px" }}
+              style={{ fontWeight: 400, fontSize: "15px" }}
             >
               <Link href={createPageUrl(primaryButtonPage)}>
                 {primaryButtonText}
@@ -66,7 +66,7 @@ export default function CTABox({
               onClick={onSecondaryClick}
               variant="outline"
               className="border-2 border-gray-300 bg-white hover:bg-gray-50 text-slate-700 rounded-full px-6 py-3"
-              style={{ fontWeight: 600, fontSize: "15px" }}
+              style={{ fontWeight: 400, fontSize: "15px" }}
             >
               {secondaryButtonText}
             </Button>
@@ -75,7 +75,7 @@ export default function CTABox({
               asChild
               variant="outline"
               className="border-2 border-gray-300 bg-white hover:bg-gray-50 text-slate-700 rounded-full px-6 py-3"
-              style={{ fontWeight: 600, fontSize: "15px" }}
+              style={{ fontWeight: 400, fontSize: "15px" }}
             >
               <a href="tel:+919790444939">{secondaryButtonText}</a>
             </Button>

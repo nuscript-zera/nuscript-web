@@ -105,11 +105,11 @@ export default function ContactContent() {
               >
                 <info.icon className="w-6 h-6 text-white" />
               </div>
-              <h3 style={{ fontWeight: 600, fontSize: "18px" }} className="text-[#222733] mb-2">
+              <h3 style={{ fontWeight: 400, fontSize: "18px" }} className="text-[#222733] mb-2">
                 {info.title}
               </h3>
               {info.company && (
-                <p style={{ fontWeight: 600, fontSize: "14px" }} className="text-gray-700 mb-2">
+                <p style={{ fontWeight: 400, fontSize: "14px" }} className="text-gray-700 mb-2">
                   {info.company}
                 </p>
               )}
@@ -120,7 +120,7 @@ export default function ContactContent() {
                     <p key={i} style={{ fontWeight: 400, fontSize: "14px" }} className="text-gray-600">
                       {email ? (
                         <>
-                          <span style={{ fontWeight: 600 }}>{label}:</span>{" "}
+                          <span style={{ fontWeight: 400 }}>{label}:</span>{" "}
                           <a href={`mailto:${email}`} className="text-[#2563eb] hover:underline">
                             {email}
                           </a>
@@ -133,7 +133,7 @@ export default function ContactContent() {
                 })}
               </div>
               {info.phone && (
-                <p style={{ fontWeight: 600, fontSize: "14px" }} className="text-[#2563eb] mt-3">
+                <p style={{ fontWeight: 400, fontSize: "14px" }} className="text-[#2563eb] mt-3">
                   {info.phone}
                 </p>
               )}
@@ -159,7 +159,7 @@ export default function ContactContent() {
                 >
                   Get Started
                 </span>
-                <h2 style={{ fontWeight: 600, fontSize: "40px", lineHeight: "1.2" }} className="text-[#222733]">
+                <h2 style={{ fontWeight: 400, fontSize: "40px", lineHeight: "1.2" }} className="text-[#222733]">
                   Ready to Transform
                   <br />
                   <span className="text-[#2563eb]">Your Operations?</span>
@@ -181,7 +181,7 @@ export default function ContactContent() {
               viewport={{ once: true }}
               className="bg-white rounded-2xl p-6 border border-blue-100 shadow-lg shadow-blue-500/10"
             >
-              <h3 style={{ fontWeight: 600, fontSize: "20px" }} className="text-[#222733] mb-4">
+              <h3 style={{ fontWeight: 400, fontSize: "20px" }} className="text-[#222733] mb-4">
                 Schedule a Demo
               </h3>
 
@@ -244,7 +244,7 @@ export default function ContactContent() {
                   type="submit"
                   disabled={isSubmitting}
                   className="w-full bg-[#2563eb] hover:bg-blue-700 text-white rounded-lg py-2 flex items-center justify-center gap-2 mt-2"
-                  style={{ fontWeight: 600, fontSize: "14px" }}
+                  style={{ fontWeight: 400, fontSize: "14px" }}
                 >
                   {isSubmitting ? "Sending..." : "Request Demo"}
                   {!isSubmitting && <ArrowRight className="w-4 h-4" />}

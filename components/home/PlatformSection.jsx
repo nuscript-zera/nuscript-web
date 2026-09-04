@@ -43,7 +43,7 @@ export default function PlatformSection() {
             >
               Why NuScript
             </span>
-            <h2 style={{ fontWeight: 600, fontSize: "36px" }} className="text-white mb-6 leading-tight">
+            <h2 style={{ fontWeight: 400, fontSize: "36px" }} className="text-white mb-6 leading-tight">
               Expertise + Technology,
               <span className="block text-[#0d9488]">Working Together</span>
             </h2>
@@ -71,7 +71,7 @@ export default function PlatformSection() {
                     <feature.icon className="w-5 h-5 text-white" />
                   </div>
                   <div>
-                    <p style={{ fontWeight: 600, fontSize: "16px" }} className="text-white">
+                    <p style={{ fontWeight: 400, fontSize: "16px" }} className="text-white">
                       {feature.label}
                     </p>
                     <p style={{ fontWeight: 400, fontSize: "14px" }} className="text-gray-400">
@@ -115,7 +115,7 @@ export default function PlatformSection() {
               ].map((stat) => (
                 <div key={stat.label} className="text-center p-4 rounded-2xl bg-white/5">
                   <p
-                    style={{ fontWeight: 600, fontSize: "24px", fontVariantNumeric: "tabular-nums" }}
+                    style={{ fontWeight: 400, fontSize: "24px", fontVariantNumeric: "tabular-nums" }}
                     className="text-[#0d9488]"
                   >
                     {stat.value}

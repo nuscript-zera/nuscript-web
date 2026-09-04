@@ -76,7 +76,7 @@ export default function GenericHero({
 
             <h1
               style={{
-                fontWeight: 600,
+                fontWeight: 500,
                 fontSize: image ? "52px" : "64px",
                 letterSpacing: "-0.03em",
                 lineHeight: "1.2",

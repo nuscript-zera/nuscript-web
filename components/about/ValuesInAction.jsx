@@ -41,7 +41,7 @@ export default function ValuesInAction() {
               Our Culture
             </span>
           </div>
-          <h3 style={{ fontWeight: 600, fontSize: "40px", lineHeight: "1.2" }} className="text-slate-900 mb-6">
+          <h3 style={{ fontWeight: 400, fontSize: "40px", lineHeight: "1.2" }} className="text-slate-900 mb-6">
             Values in Action
           </h3>
           <p
@@ -75,7 +75,7 @@ export default function ValuesInAction() {
                 >
                   <Icon className="w-8 h-8 text-[#2563eb]" />
                 </motion.div>
-                <h4 style={{ fontWeight: 600, fontSize: "20px" }} className="text-slate-900 mb-4">
+                <h4 style={{ fontWeight: 400, fontSize: "20px" }} className="text-slate-900 mb-4">
                   {value.title}
                 </h4>
                 <p style={{ fontWeight: 400, fontSize: "15px", lineHeight: "1.8" }} className="text-slate-600">

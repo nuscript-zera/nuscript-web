@@ -46,7 +46,7 @@ export default function WhatNuScriptDoes() {
           viewport={{ once: true }}
           className="mb-16"
         >
-          <h3 style={{ fontWeight: 600, fontSize: "36px", lineHeight: "1.2" }} className="text-slate-900 mb-12">
+          <h3 style={{ fontWeight: 400, fontSize: "36px", lineHeight: "1.2" }} className="text-slate-900 mb-12">
             What NuScript Does
           </h3>
         </motion.div>
@@ -65,7 +65,7 @@ export default function WhatNuScriptDoes() {
               <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-100 to-indigo-100 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                 <CheckCircle2 className="w-5 h-5 text-[#2563eb]" />
               </div>
-              <h4 style={{ fontWeight: 600, fontSize: "18px" }} className="text-slate-900 mb-2">
+              <h4 style={{ fontWeight: 400, fontSize: "18px" }} className="text-slate-900 mb-2">
                 {cap.title}
               </h4>
               <p style={{ fontWeight: 400, fontSize: "14px", lineHeight: "1.7" }} className="text-slate-600">
