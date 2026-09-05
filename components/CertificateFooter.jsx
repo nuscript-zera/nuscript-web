@@ -38,7 +38,7 @@ export default function CertificateFooter() {
           </div>
 
           <div className="mx-auto mt-10 max-w-xs border-t border-ink/15 pt-6">
-            <p className="font-heading text-3xl italic text-ink">The NuScript Team</p>
+            <p className="font-heading text-3xl text-ink">The NuScript Team</p>
             <p className="mt-1 micro-label text-sage">25+ Years · Healthcare Documentation</p>
           </div>
         </div>
