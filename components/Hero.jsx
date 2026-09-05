@@ -32,7 +32,7 @@ export default function Hero() {
 
         <div className="relative grid min-h-[74vh] grid-cols-1 items-center md:grid-cols-12">
           <div className="relative z-20 md:col-span-8">
-            <h1 className="font-heading text-[clamp(3.5rem,12vw,11rem)] leading-[0.88] tracking-tight text-ink">
+            <h1 className="font-heading text-[clamp(3.5rem,12vw,15rem)] leading-[0.88] tracking-tight text-ink">
               <span className="block italic animate-rise">Documentation,</span>
               <span className="block animate-rise" style={{ animationDelay: "0.12s" }}>
                 Formulated
