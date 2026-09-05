@@ -26,7 +26,7 @@ export default function Hero() {
 
       <div className="relative mx-auto max-w-[1400px] px-6 md:px-12">
         <div className="flex items-center justify-between border-b border-ink/10 pb-6">
-          <span className="micro-label text-sage">NUSCRIPT · CLINICAL DOCUMENTATION · 2026</span>
+          <span className="micro-label text-sage">NUSCRIPT · 25+ YEARS · HEALTHCARE HERITAGE</span>
           <span className="micro-label hidden text-sage sm:block">HIPAA COMPLIANT · SOC 2 ALIGNED</span>
         </div>
 

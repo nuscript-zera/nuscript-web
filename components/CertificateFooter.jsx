@@ -15,7 +15,7 @@ export default function CertificateFooter() {
           <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full border border-ink/20">
             <ShieldCheck className="h-7 w-7 text-ink" strokeWidth={1.25} />
           </div>
-          <span className="micro-label text-sage">Certificate of Compliance</span>
+          <span className="micro-label text-sage">Compliance, by design</span>
           <img
             src="/nuscript-logo.svg"
             alt="NuScript"

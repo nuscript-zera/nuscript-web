@@ -25,11 +25,11 @@ export default function FloatingNav() {
 
   return (
     <nav
-      className="fixed bottom-5 left-1/2 z-50 -translate-x-1/2"
+      className="fixed bottom-5 right-5 z-50"
       onMouseEnter={() => setOpen(true)}
       onMouseLeave={() => setOpen(false)}
     >
-      <div className="flex flex-col items-center gap-2">
+      <div className="flex flex-col items-end gap-2">
         <div
           className={`overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${
             open ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
