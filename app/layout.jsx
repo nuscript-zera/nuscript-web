@@ -59,14 +59,21 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {/* Kill any leftover service worker / PWA cache from the old Base44 site.
-            Those intercept requests and re-serve the stale old app, which caused
-            the new fonts to flash in and then revert. This runs on every load and
-            reloads once after clearing so returning visitors get the fresh site. */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(function(){try{if('serviceWorker' in navigator){navigator.serviceWorker.getRegistrations().then(function(rs){var had=rs.length>0;rs.forEach(function(r){r.unregister();});if(window.caches&&caches.keys){caches.keys().then(function(ks){ks.forEach(function(k){caches.delete(k);});});}if(had){location.reload();}});}}catch(e){}})();`,
-          }}
+        {/* Preload the display font (Instrument Serif) so the real font is ready
+            at first paint — prevents the brief fallback flash on the giant hero. */}
+        <link
+          rel="preload"
+          href="/fonts/InstrumentSerif-Regular.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/InstrumentSerif-Italic.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
         />
       </head>
       <body>
