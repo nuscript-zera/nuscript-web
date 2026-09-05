@@ -1,37 +1,12 @@
-import localFont from "next/font/local";
-
 import "./globals.css";
 import SiteHeader from "@/components/SiteHeader";
 import CertificateFooter from "@/components/CertificateFooter";
 
-// Fonts — self-hosted from files committed in the repo (next/font/local).
-// No build-time fetch from Google, so the fonts are guaranteed to ship and
-// load on every deploy (Cloudflare included) instead of falling back to Times.
-//   Instrument Serif → display headings   (--font-heading)
-//   Public Sans      → body copy           (--font-sans)
-//   Inter Tight      → uppercase labels/UI (--font-ui)
-const instrumentSerif = localFont({
-  src: [
-    { path: "./fonts/InstrumentSerif-Regular.woff2", weight: "400", style: "normal" },
-    { path: "./fonts/InstrumentSerif-Italic.woff2", weight: "400", style: "italic" },
-  ],
-  variable: "--font-heading",
-  display: "swap",
-});
-
-const publicSans = localFont({
-  src: "./fonts/PublicSans-Variable.woff2",
-  weight: "100 900",
-  variable: "--font-sans",
-  display: "swap",
-});
-
-const interTight = localFont({
-  src: "./fonts/InterTight-Variable.woff2",
-  weight: "100 900",
-  variable: "--font-ui",
-  display: "swap",
-});
+// Fonts are self-hosted from /public/fonts and declared via @font-face in
+// globals.css. They're served at /fonts/*.woff2 — the same site-root path the
+// images use, which the deploy serves reliably — with no next/font and no
+// dependency on /_next/static/media. Instrument Serif (headings), Public Sans
+// (body), Inter Tight (uppercase labels).
 
 const SITE_URL = "https://nuscript.net";
 const SITE_DESCRIPTION =
@@ -82,10 +57,7 @@ export const viewport = {
 
 export default function RootLayout({ children }) {
   return (
-    <html
-      lang="en"
-      className={`${instrumentSerif.variable} ${publicSans.variable} ${interTight.variable}`}
-    >
+    <html lang="en">
       <body>
         <div className="lab-grain min-h-screen">
           <SiteHeader />

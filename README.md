@@ -16,7 +16,7 @@ palette.
   URL for SEO.
 - **Tailwind CSS** for styling; design tokens (bone / ink / plasma / sage) in
   `app/globals.css` and `tailwind.config.js`.
-- **Fonts** — self-hosted at build via `next/font/google` (no runtime CDN):
+- **Fonts** — self-hosted from `/public/fonts` via plain `@font-face` (served at `/fonts/*.woff2`):
   Instrument Serif (display), Public Sans (body), Inter Tight (labels/UI).
 - **lucide-react** for icons.
 
