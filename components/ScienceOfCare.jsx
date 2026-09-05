@@ -2,8 +2,8 @@ import React from "react";
 
 const FINDINGS = [
   { k: "Documents processed", v: "50M+", d: "Transcribed, coded, and reconciled across 40+ U.S. specialties over 25 years." },
-  { k: "Avg turnaround", v: "<4hr", d: "Same-day, chart-ready notes keep clinicians current and claims moving." },
-  { k: "Avg accuracy", v: "99%+", d: "Skilled MTs, scribes, coders & billers backed by AI-enhanced QA workflows." },
+  { k: "Avg turnaround", v: "<8hr", d: "Same-day, chart-ready notes keep clinicians current and claims moving." },
+  { k: "Avg accuracy", v: "99%+", d: "Skilled MTs, scribes, coders & billers backed by rigorous multi-layer QA workflows." },
 ];
 
 export default function ScienceOfCare() {

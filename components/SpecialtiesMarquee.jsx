@@ -1,6 +1,6 @@
 import React from "react";
 
-const SPECIALTIES = [
+export const SPECIALTIES = [
   "Cardiology", "Orthopedics", "Radiology", "Dermatology", "Oncology", "Pediatrics",
   "Neurology", "Gastroenterology", "OBGYN", "Psychiatry", "Urology", "ENT",
   "Ophthalmology", "Endocrinology", "Rheumatology", "Nephrology", "Pulmonology",

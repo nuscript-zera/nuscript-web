@@ -35,7 +35,7 @@ export default function AboutPage() {
             25 years of <span className="italic text-plasma">healthcare</span> excellence.
           </h1>
           <p className="mt-8 max-w-xl font-body text-lg leading-relaxed text-bone/75">
-            From traditional transcription to AI-enhanced documentation services — our evolution
+            From traditional transcription to end-to-end documentation services — our evolution
             reflects healthcare&apos;s own transformation. Today we connect clinical documentation to
             revenue cycle from a single, trusted partner.
           </p>

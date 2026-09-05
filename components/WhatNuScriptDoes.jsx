@@ -3,7 +3,7 @@ import React from "react";
 const CAPABILITIES = [
   {
     title: "Clinical Documentation Excellence",
-    desc: "Built on a long history in medical transcription and AI-assisted scribing to capture every encounter accurately and compliantly.",
+    desc: "Built on a long history in medical transcription and scribing to capture every encounter accurately and compliantly.",
   },
   {
     title: "Optimized Medical Coding & RCM",

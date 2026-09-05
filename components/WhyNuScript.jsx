@@ -12,7 +12,7 @@ const PILLARS = [
   { title: "End-to-End Services", desc: "Documentation through revenue." },
   { title: "24/7 Operations", desc: "Extended coverage across U.S. time zones." },
   { title: "HIPAA Compliant", desc: "Enterprise-grade security & compliance." },
-  { title: "AI-Enhanced Workflows", desc: "Technology that amplifies expertise." },
+  { title: "Rigorous QA", desc: "Multi-layer review ensuring accuracy." },
   { title: "Transparent Reporting", desc: "Complete visibility into your operations." },
 ];
 

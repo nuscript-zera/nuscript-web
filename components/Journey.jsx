@@ -4,7 +4,7 @@ const MILESTONES = [
   { year: "2000", title: "Founded", desc: "Medical transcription services launched." },
   { year: "2017", title: "Expanded", desc: "Multi-specialty documentation services." },
   { year: "2023", title: "Diversified", desc: "Added coding & RCM services." },
-  { year: "2025", title: "AI-Enhanced", desc: "Integrated AI into documentation workflows." },
+  { year: "2025", title: "Connected", desc: "Unified documentation and revenue cycle into one seamless workflow." },
   { year: "Now", title: "Full-Service", desc: "Clinical documentation through revenue cycle." },
 ];
 

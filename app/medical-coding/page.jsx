@@ -4,7 +4,7 @@ import { getService, SERVICES } from "@/lib/services";
 export const metadata = {
   title: "Medical Coding Services",
   description:
-    "AI-enhanced workflows and certified coding specialists deliver accurate, compliant ICD-10, CPT, and HCPCS codes — reducing denials and accelerating your revenue cycle.",
+    "Certified coding specialists deliver accurate, compliant ICD-10, CPT, and HCPCS codes — reducing denials and accelerating your revenue cycle.",
   alternates: { canonical: "/medical-coding" },
 };
 

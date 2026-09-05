@@ -7,7 +7,7 @@ const STATS = [
   { v: "99.5%", k: "Accuracy" },
   { v: "40+", k: "Specialties" },
   { v: "50M+", k: "Documents" },
-  { v: "<4hr", k: "Turnaround" },
+  { v: "<8hr", k: "Turnaround" },
 ];
 
 export default function Hero() {
@@ -104,10 +104,14 @@ export default function Hero() {
               <span className="micro-label text-sage">{s.k}</span>
             </div>
           ))}
-          <span className="ml-auto hidden items-center gap-3 text-sage md:flex">
+          <a
+            href="#services"
+            aria-label="Scroll to services"
+            className="ml-auto hidden items-center gap-3 text-sage transition-colors hover:text-ink md:flex"
+          >
             <ArrowDown className="h-4 w-4 animate-bounce" strokeWidth={1.25} />
             <span className="micro-label">Scroll to deconstruct</span>
-          </span>
+          </a>
         </div>
       </div>
     </section>

@@ -1,10 +1,13 @@
 import React from "react";
+import { SPECIALTIES } from "./SpecialtiesMarquee";
 
-const SPECIALTIES = [
-  "Mental health", "Family medicine", "Cardiology", "Pain management",
-  "Physical therapy", "Orthopedics", "Pediatrics", "Oncology",
-  "Acute care", "Ambulatory surgery centers",
+// Care settings beyond the core specialty list (kept from the original list).
+const CARE_SETTINGS = [
+  "Mental Health", "Pain Management", "Physical Therapy",
+  "Acute Care", "Ambulatory Surgery Centers",
 ];
+
+const SERVED = [...SPECIALTIES, ...CARE_SETTINGS];
 
 export default function WhoNuScriptIs() {
   return (
@@ -25,7 +28,7 @@ export default function WhoNuScriptIs() {
         <div className="mt-12">
           <span className="micro-label text-sage">Specialties served</span>
           <div className="mt-6 flex flex-wrap gap-3">
-            {SPECIALTIES.map((s) => (
+            {SERVED.map((s) => (
               <span
                 key={s}
                 className="rounded-full border border-ink/15 px-5 py-2.5 font-ui text-sm text-ink/75 transition-colors hover:border-plasma hover:text-ink"
