@@ -58,6 +58,17 @@ export const viewport = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        {/* Kill any leftover service worker / PWA cache from the old Base44 site.
+            Those intercept requests and re-serve the stale old app, which caused
+            the new fonts to flash in and then revert. This runs on every load and
+            reloads once after clearing so returning visitors get the fresh site. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{if('serviceWorker' in navigator){navigator.serviceWorker.getRegistrations().then(function(rs){var had=rs.length>0;rs.forEach(function(r){r.unregister();});if(window.caches&&caches.keys){caches.keys().then(function(ks){ks.forEach(function(k){caches.delete(k);});});}if(had){location.reload();}});}}catch(e){}})();`,
+          }}
+        />
+      </head>
       <body>
         <div className="lab-grain min-h-screen">
           <SiteHeader />
