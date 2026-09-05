@@ -18,7 +18,7 @@ export default function ContactPage() {
           </div>
           <div className="py-16 md:py-20">
             <h1 className="max-w-3xl font-heading text-[clamp(3rem,8vw,6.5rem)] leading-[0.9] tracking-tight text-ink">
-              Let&apos;s show you <span className="italic text-plasma">how</span>.
+              Every clean claim starts <span className="italic text-plasma">here</span>.
             </h1>
             <p className="mt-8 max-w-xl font-body text-lg leading-relaxed text-ink/70">
               Schedule a consultation. Tell us about your practice and we&apos;ll return a tailored
