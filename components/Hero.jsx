@@ -49,7 +49,7 @@ export default function Hero() {
           <div className="relative z-30 mt-10 md:col-span-5 md:col-start-8 md:mt-0 md:-ml-24">
             <div className="relative aspect-[3/4] w-full max-w-[440px] animate-drift">
               <img
-                src="/healthtech.webp"
+                src="/healthtech.6e0d054f.webp"
                 alt="Caregiver assisting an elderly patient in a clinical setting"
                 className="h-full w-full rounded-sm object-cover"
               />

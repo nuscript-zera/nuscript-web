@@ -20,7 +20,7 @@ export default function AboutPage() {
       <section className="relative overflow-hidden bg-ink text-bone">
         <div className="absolute inset-0">
           <img
-            src="/about.webp"
+            src="/about.6a12506d.webp"
             alt="NuScript team collaborating in a clinical operations setting"
             className="h-full w-full object-cover opacity-50"
           />

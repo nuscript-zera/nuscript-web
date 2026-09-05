@@ -21,7 +21,7 @@ export default function ScienceOfCare() {
       <div className="relative my-16 overflow-hidden bg-ink">
         <div className="absolute inset-0">
           <img
-            src="/doctor-consult.webp"
+            src="/doctor-consult.94ef1b6e.webp"
             alt="Physician greeting a patient during a telehealth consultation"
             className="h-full w-full object-cover opacity-45"
           />
