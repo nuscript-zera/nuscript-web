@@ -1,30 +1,34 @@
-import { Instrument_Serif, Public_Sans, Inter_Tight } from "next/font/google";
+import localFont from "next/font/local";
 
 import "./globals.css";
 import SiteHeader from "@/components/SiteHeader";
 import CertificateFooter from "@/components/CertificateFooter";
 
-// Fonts — self-hosted at build by next/font (no runtime CDN):
+// Fonts — self-hosted from files committed in the repo (next/font/local).
+// No build-time fetch from Google, so the fonts are guaranteed to ship and
+// load on every deploy (Cloudflare included) instead of falling back to Times.
 //   Instrument Serif → display headings   (--font-heading)
 //   Public Sans      → body copy           (--font-sans)
 //   Inter Tight      → uppercase labels/UI (--font-ui)
-const instrumentSerif = Instrument_Serif({
-  subsets: ["latin"],
-  weight: "400",
-  style: ["normal", "italic"],
+const instrumentSerif = localFont({
+  src: [
+    { path: "./fonts/InstrumentSerif-Regular.woff2", weight: "400", style: "normal" },
+    { path: "./fonts/InstrumentSerif-Italic.woff2", weight: "400", style: "italic" },
+  ],
   variable: "--font-heading",
   display: "swap",
 });
 
-const publicSans = Public_Sans({
-  subsets: ["latin"],
+const publicSans = localFont({
+  src: "./fonts/PublicSans-Variable.woff2",
+  weight: "100 900",
   variable: "--font-sans",
   display: "swap",
 });
 
-const interTight = Inter_Tight({
-  subsets: ["latin"],
-  weight: ["400", "500", "600"],
+const interTight = localFont({
+  src: "./fonts/InterTight-Variable.woff2",
+  weight: "100 900",
   variable: "--font-ui",
   display: "swap",
 });
