@@ -19,8 +19,8 @@ export default function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-ink/10 bg-bone/85 backdrop-blur-xl">
       <div className="mx-auto flex max-w-[1400px] items-center justify-between px-6 py-4 md:px-12">
-        <Link href="/" className="flex items-baseline gap-2">
-          <span className="font-heading text-2xl italic leading-none text-ink">NuScript</span>
+        <Link href="/" className="flex items-center gap-2.5">
+          <img src="/nuscript-logo.svg" alt="NuScript" className="h-6 w-auto md:h-7" />
           <span className="hidden font-ui text-[10px] uppercase tracking-[0.2em] text-sage sm:inline">
             Clinical Documentation
           </span>

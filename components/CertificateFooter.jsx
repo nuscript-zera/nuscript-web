@@ -16,9 +16,11 @@ export default function CertificateFooter() {
             <ShieldCheck className="h-7 w-7 text-ink" strokeWidth={1.25} />
           </div>
           <span className="micro-label text-sage">Certificate of Compliance</span>
-          <h2 className="mt-4 font-heading text-[clamp(2.5rem,6vw,4.5rem)] leading-none tracking-tight text-ink">
-            NuScript
-          </h2>
+          <img
+            src="/nuscript-logo.svg"
+            alt="NuScript"
+            className="mx-auto mt-4 h-12 w-auto md:h-16"
+          />
           <p className="mx-auto mt-5 max-w-md font-body text-base leading-relaxed text-ink/65">
             Clinical documentation and revenue cycle services delivered under HIPAA-compliant,
             SOC 2-aligned processes — verified across 40+ U.S. specialties.
