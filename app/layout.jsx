@@ -59,22 +59,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {/* Preload the display font (Instrument Serif) so the real font is ready
-            at first paint — prevents the brief fallback flash on the giant hero. */}
-        <link
-          rel="preload"
-          href="/fonts/InstrumentSerif-Regular.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
-        <link
-          rel="preload"
-          href="/fonts/InstrumentSerif-Italic.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
+        {/* Self-hosted fonts (declared via @font-face in globals.css). Preload the
+            display faces so the hero paints in Fraunces immediately. */}
+        <link rel="preload" href="/fonts/Fraunces-Roman.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        <link rel="preload" href="/fonts/Fraunces-Italic.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        <link rel="preload" href="/fonts/Geist-Roman.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
       </head>
       <body>
         <div className="lab-grain min-h-screen">

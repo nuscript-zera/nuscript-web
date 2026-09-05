@@ -1,29 +1,37 @@
-/* Self-hosted fonts — served from /public/fonts at /fonts/*.woff2 (the same
-   site-root path images use), so they load on any static host. */
+/* Self-hosted fonts — official variable files, served from /public/fonts at
+   /fonts/*.woff2. Fraunces (display serif, carries an opsz axis), Geist (body),
+   Geist Mono (uppercase micro-labels / UI). No external dependency. */
 @font-face {
-  font-family: "Instrument Serif";
-  src: url("/fonts/InstrumentSerif-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: block;
-}
-@font-face {
-  font-family: "Instrument Serif";
-  src: url("/fonts/InstrumentSerif-Italic.woff2") format("woff2");
-  font-weight: 400;
-  font-style: italic;
-  font-display: block;
-}
-@font-face {
-  font-family: "Public Sans";
-  src: url("/fonts/PublicSans-Variable.woff2") format("woff2");
+  font-family: "Fraunces";
+  src: url("/fonts/Fraunces-Roman.woff2") format("woff2");
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Inter Tight";
-  src: url("/fonts/InterTight-Variable.woff2") format("woff2");
+  font-family: "Fraunces";
+  src: url("/fonts/Fraunces-Italic.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Geist";
+  src: url("/fonts/Geist-Roman.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Geist";
+  src: url("/fonts/Geist-Italic.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Geist Mono";
+  src: url("/fonts/GeistMono-Roman.woff2") format("woff2");
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -40,9 +48,9 @@
     --plasma: #4cc9f0;
     --sage: #a5a58d;
     --radius: 0.25rem;
-    --font-heading: "Instrument Serif", ui-serif, Georgia, serif;
-    --font-sans: "Public Sans", ui-sans-serif, system-ui, sans-serif;
-    --font-ui: "Inter Tight", ui-sans-serif, system-ui, sans-serif;
+    --font-heading: "Fraunces", ui-serif, Georgia, serif;
+    --font-sans: "Geist", ui-sans-serif, system-ui, sans-serif;
+    --font-ui: "Geist Mono", ui-monospace, "SFMono-Regular", monospace;
   }
 
   * {
@@ -61,6 +69,9 @@
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
+    /* Fraunces carries an optical-size axis — let it scale with font-size so the
+       giant hero gets the high-contrast display cut and small text stays readable. */
+    font-optical-sizing: auto;
   }
 
   ::selection {

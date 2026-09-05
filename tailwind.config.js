@@ -21,7 +21,7 @@ module.exports = {
       fontFamily: {
         heading: ["var(--font-heading)", "ui-serif", "Georgia", "serif"],
         body: ["var(--font-sans)", "ui-sans-serif", "system-ui", "sans-serif"],
-        ui: ["var(--font-ui)", "ui-sans-serif", "system-ui", "sans-serif"],
+        ui: ["var(--font-ui)", "ui-monospace", "SFMono-Regular", "monospace"],
       },
       borderRadius: {
         lg: "var(--radius)",
