@@ -29,7 +29,7 @@ export default function AboutPage() {
         <div className="relative mx-auto max-w-[1400px] px-6 py-28 md:px-12 md:py-40">
           <div className="flex items-center justify-between border-b border-bone/20 pb-6">
             <span className="micro-label text-sage">§ ABOUT NUSCRIPT</span>
-            <span className="micro-label text-sage">EST. 2000</span>
+            <span className="micro-label text-sage">HEALTHCARE HERITAGE</span>
           </div>
           <h1 className="mt-10 max-w-4xl font-heading text-[clamp(3.5rem,10vw,9rem)] leading-[0.86] tracking-tight">
             25 years of <span className="italic text-plasma">healthcare</span> excellence.
