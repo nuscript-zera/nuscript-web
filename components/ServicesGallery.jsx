@@ -19,7 +19,7 @@ export default function ServicesGallery() {
       <div className="mx-auto max-w-[1400px] px-6 md:px-12">
         <div className="flex flex-col gap-6 border-b border-ink/10 pb-8 md:flex-row md:items-end md:justify-between">
           <div>
-            <span className="micro-label text-sage">§ 02 — Our Services</span>
+            <span className="micro-label text-sage">§ 01 — Our Services</span>
             <h2 className="mt-3 font-heading text-[clamp(2.5rem,6vw,5rem)] leading-[0.95] tracking-tight text-ink">
               From documentation to revenue, <span className="italic">seamlessly connected</span>.
             </h2>

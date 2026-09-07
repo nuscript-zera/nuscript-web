@@ -3,7 +3,7 @@ import React from "react";
 const FINDINGS = [
   { k: "Documents processed", v: "50M+", d: "Transcribed, coded, and reconciled across 40+ U.S. specialties over 25 years." },
   { k: "Avg turnaround", v: "<8hr", d: "Same-day, chart-ready notes keep clinicians current and claims moving." },
-  { k: "Avg accuracy", v: "99%+", d: "Skilled MTs, scribes, coders & billers backed by rigorous multi-layer QA workflows." },
+  { k: "Avg accuracy", v: "99.5%", d: "Skilled MTs, scribes, coders & billers backed by rigorous multi-layer QA workflows." },
 ];
 
 export default function ScienceOfCare() {
@@ -11,7 +11,7 @@ export default function ScienceOfCare() {
     <section id="science" className="relative bg-bone py-24 md:py-32">
       <div className="mx-auto max-w-[1400px] px-6 md:px-12">
         <div className="border-b border-ink/10 pb-8">
-          <span className="micro-label text-sage">§ 04 — The Science of Care</span>
+          <span className="micro-label text-sage">§ 03 — The Science of Care</span>
           <h2 className="mt-3 max-w-4xl font-heading text-[clamp(2.5rem,6vw,5rem)] leading-[0.95] tracking-tight text-ink">
             Why accurate documentation <span className="italic">pays for itself</span>.
           </h2>

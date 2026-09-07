@@ -21,7 +21,7 @@ export default function WhyNuScript() {
     <section className="bg-bone py-24 md:py-32">
       <div className="mx-auto max-w-[1400px] px-6 md:px-12">
         <div className="border-b border-ink/10 pb-8">
-          <span className="micro-label text-sage">Why NuScript</span>
+          <span className="micro-label text-sage">§ 02 — Why NuScript</span>
           <h2 className="mt-3 max-w-4xl font-heading text-[clamp(2.5rem,6vw,5rem)] leading-[0.95] tracking-tight text-ink">
             Expertise + technology, <span className="italic">working together</span>.
           </h2>

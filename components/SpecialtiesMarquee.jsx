@@ -6,7 +6,7 @@ export const SPECIALTIES = [
   "Ophthalmology", "Endocrinology", "Rheumatology", "Nephrology", "Pulmonology",
   "Hematology", "Emergency Medicine", "Anesthesiology", "Pathology", "Family Medicine",
   "Internal Medicine", "General Surgery", "Plastic Surgery", "Vascular Surgery",
-  "Neurosurgery", "Cardiac Surgery", "Dentistry", "Podiatry",
+  "Neurosurgery", "Cardiac Surgery", "Dentistry", "Podiatry", "Pain Management",
 ];
 
 function Row({ reverse }) {

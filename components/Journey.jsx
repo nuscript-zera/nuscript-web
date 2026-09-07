@@ -25,7 +25,7 @@ export default function Journey() {
       </span>
       <div className="relative mx-auto max-w-[1400px] px-6 md:px-12">
         <div className="border-b border-ink/10 pb-8">
-          <span className="micro-label text-sage">§ 05 — Our Journey</span>
+          <span className="micro-label text-sage">§ Our Journey</span>
           <h2 className="mt-3 font-heading text-[clamp(2.5rem,6vw,5rem)] leading-[0.95] tracking-tight text-ink">
             25 years of <span className="italic">healthcare excellence</span>.
           </h2>
