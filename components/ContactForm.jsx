@@ -65,7 +65,7 @@ export default function ContactForm() {
 
   if (done) {
     return (
-      <div className="border border-ink/15 bg-bone p-12 text-center">
+      <div className="flex h-full flex-1 flex-col items-center justify-center border border-ink/15 bg-bone p-12 text-center">
         <div className="mx-auto mb-6 flex h-14 w-14 items-center justify-center rounded-full bg-plasma">
           <Check className="h-6 w-6 text-ink" strokeWidth={2} />
         </div>
@@ -79,7 +79,7 @@ export default function ContactForm() {
   }
 
   return (
-    <div className="border border-ink/15 bg-bone p-8 md:p-12">
+    <div className="flex h-full flex-1 flex-col border border-ink/15 bg-bone p-8 md:p-12">
       <div className="mb-8 flex items-center justify-between">
         <span className="micro-label text-sage">Consultation intake</span>
         <BeakerProgress step={step + 1} total={STEPS.length} />
@@ -116,7 +116,7 @@ export default function ContactForm() {
           </div>
         ))}
       </div>
-      <div className="mt-8 flex items-center justify-between">
+      <div className="mt-auto flex items-center justify-between pt-8">
         <button
           onClick={back}
           disabled={step === 0}

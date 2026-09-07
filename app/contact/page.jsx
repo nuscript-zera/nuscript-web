@@ -30,7 +30,7 @@ export default function ContactPage() {
 
       <section className="bg-bone pb-24 md:pb-32">
         <div className="mx-auto grid max-w-[1400px] grid-cols-1 gap-12 px-6 md:grid-cols-12 md:px-12">
-          <div className="md:col-span-7">
+          <div className="flex flex-col md:col-span-7">
             <ContactForm />
           </div>
           <div className="flex flex-col md:col-span-5">
