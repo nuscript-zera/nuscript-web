@@ -33,8 +33,8 @@ export default function ContactPage() {
           <div className="md:col-span-7">
             <ContactForm />
           </div>
-          <div className="md:col-span-5">
-            <div className="border border-ink/15 bg-bone p-8">
+          <div className="flex flex-col md:col-span-5">
+            <div className="flex h-full flex-1 flex-col border border-ink/15 bg-bone p-8">
               <span className="micro-label text-sage">Talk with our team</span>
               <div className="mt-6 space-y-6 font-body text-ink/75">
                 <div>
@@ -65,14 +65,14 @@ export default function ContactPage() {
                   </a>
                 </div>
               </div>
+              <ul className="mt-8 space-y-3 border-t border-ink/10 pt-6 font-ui text-sm text-ink/65 md:mt-auto">
+                {["HIPAA-secure intake", "Same-day response", "No obligation"].map((t) => (
+                  <li key={t} className="flex items-center gap-3">
+                    <span className="h-1.5 w-1.5 rounded-full bg-plasma" /> {t}
+                  </li>
+                ))}
+              </ul>
             </div>
-            <ul className="mt-6 space-y-3 font-ui text-sm text-ink/65">
-              {["HIPAA-secure intake", "Same-day response", "No obligation"].map((t) => (
-                <li key={t} className="flex items-center gap-3">
-                  <span className="h-1.5 w-1.5 rounded-full bg-plasma" /> {t}
-                </li>
-              ))}
-            </ul>
           </div>
         </div>
       </section>

@@ -1,6 +1,7 @@
 /* Self-hosted fonts — official variable files, served from /public/fonts at
-   /fonts/*.woff2. Fraunces (display serif, carries an opsz axis), Geist (body),
-   Geist Mono (uppercase micro-labels / UI). No external dependency. */
+   /fonts/*.woff2. Fraunces (display serif, carries an opsz axis) for headings,
+   DM Sans (humanist sans, carries opsz + wght axes) for body copy and UI /
+   uppercase micro-labels. No external dependency. */
 @font-face {
   font-family: "Fraunces";
   src: url("/fonts/Fraunces-Roman.woff2") format("woff2");
@@ -16,16 +17,16 @@
   font-display: swap;
 }
 @font-face {
-  font-family: "Geist";
-  src: url("/fonts/Geist-Roman.woff2") format("woff2");
-  font-weight: 100 900;
+  font-family: "DM Sans";
+  src: url("/fonts/DMSans-Roman.woff2") format("woff2");
+  font-weight: 100 1000;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Geist";
-  src: url("/fonts/Geist-Italic.woff2") format("woff2");
-  font-weight: 100 900;
+  font-family: "DM Sans";
+  src: url("/fonts/DMSans-Italic.woff2") format("woff2");
+  font-weight: 100 1000;
   font-style: italic;
   font-display: swap;
 }
@@ -41,8 +42,8 @@
     --sage: #a5a58d;
     --radius: 0.25rem;
     --font-heading: "Fraunces", ui-serif, Georgia, serif;
-    --font-sans: "Geist", ui-sans-serif, system-ui, sans-serif;
-    --font-ui: "Geist", ui-sans-serif, system-ui, sans-serif;
+    --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+    --font-ui: "DM Sans", ui-sans-serif, system-ui, sans-serif;
   }
 
   * {

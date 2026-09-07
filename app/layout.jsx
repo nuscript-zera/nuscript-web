@@ -63,7 +63,7 @@ export default function RootLayout({ children }) {
             display faces so the hero paints in Fraunces immediately. */}
         <link rel="preload" href="/fonts/Fraunces-Roman.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         <link rel="preload" href="/fonts/Fraunces-Italic.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
-        <link rel="preload" href="/fonts/Geist-Roman.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        <link rel="preload" href="/fonts/DMSans-Roman.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
       </head>
       <body>
         <div className="lab-grain min-h-screen">

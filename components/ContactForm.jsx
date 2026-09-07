@@ -9,6 +9,7 @@ const STEPS = [
     title: "Tell us about your practice",
     fields: [
       { name: "name", label: "Contact name", type: "text" },
+      { name: "email", label: "Email", type: "email" },
       { name: "practice", label: "Practice / organization", type: "text" },
       { name: "phone", label: "Phone", type: "tel" },
     ],
@@ -24,7 +25,6 @@ const STEPS = [
   {
     title: "Schedule the consultation",
     fields: [
-      { name: "email", label: "Email", type: "email" },
       { name: "notes", label: "Notes for our team", type: "textarea" },
     ],
   },
