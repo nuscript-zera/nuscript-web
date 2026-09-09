@@ -45,7 +45,7 @@ export const metadata = {
     description: SITE_DESCRIPTION,
     images: ["/nds.icon.png"],
   },
-  icons: { icon: "/nds.icon.png" },
+  icons: { icon: "/nds.icon.png", apple: "/nds.apple-icon.png" },
   alternates: { canonical: "/" },
 };
 

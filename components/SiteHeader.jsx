@@ -19,11 +19,8 @@ export default function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-ink/10 bg-bone/85 backdrop-blur-xl">
       <div className="mx-auto flex max-w-[1400px] items-center justify-between px-6 py-4 md:px-12">
-        <Link href="/" className="flex items-center gap-2.5">
-          <img src="/nuscript-logo.svg" alt="NuScript" className="h-6 w-auto md:h-7" />
-          <span className="hidden font-ui text-[10px] uppercase tracking-[0.28em] text-sage sm:inline">
-            Data Solutions
-          </span>
+        <Link href="/" className="flex items-center" aria-label="NuScript — home">
+          <img src="/nuscript-logo-full.png" alt="NuScript" className="h-7 w-auto md:h-8" />
         </Link>
 
         <nav className="hidden items-center gap-7 md:flex">
