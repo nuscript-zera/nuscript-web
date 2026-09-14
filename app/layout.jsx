@@ -5,8 +5,8 @@ import CertificateFooter from "@/components/CertificateFooter";
 // Fonts are self-hosted from /public/fonts and declared via @font-face in
 // globals.css. They're served at /fonts/*.woff2 — the same site-root path the
 // images use, which the deploy serves reliably — with no next/font and no
-// dependency on /_next/static/media. Instrument Serif (headings), Public Sans
-// (body), Inter Tight (uppercase labels).
+// dependency on /_next/static/media. Fraunces (headings), Geist
+// (body + uppercase labels).
 
 const SITE_URL = "https://nuscript.net";
 const SITE_DESCRIPTION =
@@ -63,7 +63,7 @@ export default function RootLayout({ children }) {
             display faces so the hero paints in Fraunces immediately. */}
         <link rel="preload" href="/fonts/Fraunces-Roman.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         <link rel="preload" href="/fonts/Fraunces-Italic.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
-        <link rel="preload" href="/fonts/DMSans-Roman.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        <link rel="preload" href="/fonts/Geist-Roman.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
       </head>
       <body>
         <div className="lab-grain min-h-screen">
