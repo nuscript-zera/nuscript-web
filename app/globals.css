@@ -1,7 +1,8 @@
 /* Self-hosted fonts — official variable files, served from /public/fonts at
    /fonts/*.woff2. Fraunces (display serif, carries an opsz axis) for headings,
-   Geist (neutral grotesque) for body copy and UI /
-   uppercase micro-labels. No external dependency. */
+   Kumbh Sans (geometric sans) for body copy and UI / uppercase micro-labels.
+   Kumbh Sans has no italic cut; the few sans italics are slanted by the browser.
+   No external dependency. */
 @font-face {
   font-family: "Fraunces";
   src: url("/fonts/Fraunces-Roman.woff2") format("woff2");
@@ -17,17 +18,10 @@
   font-display: swap;
 }
 @font-face {
-  font-family: "Geist";
-  src: url("/fonts/Geist-Roman.woff2") format("woff2");
+  font-family: "Kumbh Sans";
+  src: url("/fonts/KumbhSans-Variable.woff2") format("woff2");
   font-weight: 100 900;
   font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Geist";
-  src: url("/fonts/Geist-Italic.woff2") format("woff2");
-  font-weight: 100 900;
-  font-style: italic;
   font-display: swap;
 }
 @tailwind base;
@@ -42,8 +36,8 @@
     --sage: #a5a58d;
     --radius: 0.25rem;
     --font-heading: "Fraunces", ui-serif, Georgia, serif;
-    --font-sans: "Geist", ui-sans-serif, system-ui, sans-serif;
-    --font-ui: "Geist", ui-sans-serif, system-ui, sans-serif;
+    --font-sans: "Kumbh Sans", ui-sans-serif, system-ui, sans-serif;
+    --font-ui: "Kumbh Sans", ui-sans-serif, system-ui, sans-serif;
   }
 
   * {
