@@ -1,6 +1,8 @@
 import React from "react";
 import Link from "next/link";
 import { ShieldCheck } from "lucide-react";
+// Imported so the URL is content-hashed and a new logo file shows up without cache issues.
+import logoWordmark from "@/public/nuscript-logo.svg";
 
 export default function CertificateFooter() {
   return (
@@ -17,7 +19,9 @@ export default function CertificateFooter() {
           </div>
           <span className="micro-label text-sage">Compliance, by design</span>
           <img
-            src="/nuscript-logo.svg"
+            src={logoWordmark.src}
+            width={logoWordmark.width}
+            height={logoWordmark.height}
             alt="NuScript"
             className="mx-auto mt-4 h-12 w-auto md:h-16"
           />

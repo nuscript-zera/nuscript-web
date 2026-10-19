@@ -5,6 +5,9 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { SERVICES } from "@/lib/services";
+// Imported (not referenced by a /public path) so Next gives the file a content-hashed
+// URL: replacing the logo file changes the URL, and browsers fetch the new one at once.
+import logoFull from "@/public/nuscript-logo-full.png";
 
 export default function SiteHeader() {
   const pathname = usePathname();
@@ -20,7 +23,7 @@ export default function SiteHeader() {
     <header className="sticky top-0 z-40 border-b border-ink/10 bg-bone/85 backdrop-blur-xl">
       <div className="mx-auto flex max-w-[1400px] items-center justify-between px-6 py-4 md:px-12">
         <Link href="/" className="flex items-center" aria-label="NuScript — home">
-          <img src="/nuscript-logo-full.png" alt="NuScript" className="h-7 w-auto md:h-8" />
+          <img src={logoFull.src} width={logoFull.width} height={logoFull.height} alt="NuScript" className="h-7 w-auto md:h-8" />
         </Link>
 
         <nav className="hidden items-center gap-7 md:flex">
