@@ -15,7 +15,7 @@ export default function ServicePage({ service, others }) {
         <div className="mx-auto max-w-[1400px] px-6 md:px-12">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 font-ui text-[13px] text-ink/55 transition-colors hover:text-ink"
+            className="inline-flex items-center gap-2 font-ui text-[14px] text-ink/55 transition-colors hover:text-ink"
           >
             <ArrowLeft className="h-3.5 w-3.5" strokeWidth={1.5} /> Back
           </Link>
@@ -53,7 +53,7 @@ export default function ServicePage({ service, others }) {
               <div key={f.title} className="bg-bone p-8">
                 <span className="font-heading text-5xl italic leading-none text-plasma">·</span>
                 <h3 className="mt-2 font-heading text-2xl text-ink">{f.title}</h3>
-                <p className="mt-2 font-body text-[15px] leading-relaxed text-ink/65">{f.desc}</p>
+                <p className="mt-2 font-body text-[16px] leading-relaxed text-ink/65">{f.desc}</p>
               </div>
             ))}
           </div>
@@ -70,7 +70,7 @@ export default function ServicePage({ service, others }) {
               <div key={p.step} className="relative">
                 <span className="font-heading text-6xl italic leading-none text-plasma/80">{p.step}</span>
                 <h3 className="mt-3 font-heading text-2xl text-ink">{p.title}</h3>
-                <p className="mt-2 font-body text-[15px] leading-relaxed text-ink/65">{p.desc}</p>
+                <p className="mt-2 font-body text-[16px] leading-relaxed text-ink/65">{p.desc}</p>
                 {i < service.process.length - 1 && (
                   <span className="absolute right-0 top-6 hidden h-px w-8 bg-sage/40 lg:block" />
                 )}
@@ -122,7 +122,7 @@ export default function ServicePage({ service, others }) {
                 {service.benefits.map((b) => (
                   <div key={b} className="flex items-start gap-3 border-t border-ink/10 pt-4">
                     <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-plasma" />
-                    <p className="font-body text-[15px] leading-relaxed text-ink/75">{b}</p>
+                    <p className="font-body text-[16px] leading-relaxed text-ink/75">{b}</p>
                   </div>
                 ))}
               </div>
@@ -146,7 +146,7 @@ export default function ServicePage({ service, others }) {
                 >
                   <span className="font-ui text-sm text-sage">{s.no}</span>
                   <h3 className="mt-2 font-heading text-2xl text-ink">{s.title}</h3>
-                  <span className="mt-3 inline-flex items-center gap-2 font-ui text-[13px] text-ink/60 transition-colors group-hover:text-ink">
+                  <span className="mt-3 inline-flex items-center gap-2 font-ui text-[14px] text-ink/60 transition-colors group-hover:text-ink">
                     View service{" "}
                     <ArrowRight
                       className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1"

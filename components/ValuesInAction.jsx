@@ -29,7 +29,7 @@ export default function ValuesInAction() {
                 {String(i + 1).padStart(2, "0")}
               </span>
               <h3 className="mt-3 font-heading text-2xl text-ink">{v.title}</h3>
-              <p className="mt-2 font-body text-[15px] leading-relaxed text-ink/65">{v.desc}</p>
+              <p className="mt-2 font-body text-[16px] leading-relaxed text-ink/65">{v.desc}</p>
             </div>
           ))}
         </div>

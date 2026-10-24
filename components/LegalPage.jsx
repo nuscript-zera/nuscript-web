@@ -72,14 +72,14 @@ export default function LegalPage({ title, effective, intro, sections }) {
                         <h3 className="mb-2 font-ui text-sm font-semibold uppercase tracking-wider text-ink/70">
                           {sub.subtitle}
                         </h3>
-                        <div className="font-body text-[15px] leading-relaxed text-ink/70">
+                        <div className="font-body text-[16px] leading-relaxed text-ink/70">
                           <RichText text={sub.content} />
                         </div>
                       </div>
                     ))}
                   </div>
                 ) : (
-                  <div className="font-body text-[15px] leading-relaxed text-ink/70">
+                  <div className="font-body text-[16px] leading-relaxed text-ink/70">
                     <RichText text={s.content} />
                   </div>
                 )}

@@ -59,7 +59,7 @@
     background-color: var(--bone);
     color: var(--ink);
     font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
-    font-size: 18px;
+    font-size: 19px;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
@@ -77,7 +77,7 @@
 @layer components {
   .micro-label {
     font-family: var(--font-ui), ui-sans-serif, system-ui, sans-serif;
-    font-size: 11px;
+    font-size: 12px;
     letter-spacing: 0.22em;
     text-transform: uppercase;
     font-weight: 500;

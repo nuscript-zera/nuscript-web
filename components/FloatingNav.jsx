@@ -45,7 +45,7 @@ export default function FloatingNav() {
                     className="group flex w-full items-center gap-3 rounded-full px-4 py-2 text-left transition-colors hover:bg-plasma/15"
                   >
                     <Icon className="h-3.5 w-3.5 text-sage group-hover:text-ink" strokeWidth={1.25} />
-                    <span className="font-ui text-[13px] font-medium tracking-wide text-ink/80 group-hover:text-ink">
+                    <span className="font-ui text-[14px] font-medium tracking-wide text-ink/80 group-hover:text-ink">
                       {s.label}
                     </span>
                   </button>

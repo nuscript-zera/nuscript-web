@@ -15,7 +15,7 @@ export default function SiteHeader() {
   const [servicesOpen, setServicesOpen] = useState(false);
 
   const navClass = (href) =>
-    `font-ui text-[13px] font-medium tracking-wide transition-colors ${
+    `font-ui text-[14px] font-medium tracking-wide transition-colors ${
       pathname === href ? "text-ink" : "text-ink/55 hover:text-ink"
     }`;
 
@@ -32,7 +32,7 @@ export default function SiteHeader() {
             onMouseEnter={() => setServicesOpen(true)}
             onMouseLeave={() => setServicesOpen(false)}
           >
-            <button className="flex items-center gap-1 font-ui text-[13px] font-medium tracking-wide text-ink/55 transition-colors hover:text-ink">
+            <button className="flex items-center gap-1 font-ui text-[14px] font-medium tracking-wide text-ink/55 transition-colors hover:text-ink">
               Services <ChevronDown className="h-3 w-3" strokeWidth={1.5} />
             </button>
             {servicesOpen && (
@@ -45,7 +45,7 @@ export default function SiteHeader() {
                         className="group block rounded-md px-3 py-2.5 transition-colors hover:bg-plasma/10"
                         onClick={() => setServicesOpen(false)}
                       >
-                        <span className="font-ui text-[11px] tracking-wider text-sage">{s.no}</span>
+                        <span className="font-ui text-[12px] tracking-wider text-sage">{s.no}</span>
                         <span className="block font-ui text-sm font-medium text-ink">{s.title}</span>
                       </Link>
                     </li>
@@ -65,7 +65,7 @@ export default function SiteHeader() {
             href="https://app.audryl.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full bg-ink px-5 py-2 font-ui text-[13px] font-medium text-bone transition-colors hover:bg-plasma hover:text-ink"
+            className="rounded-full bg-ink px-5 py-2 font-ui text-[14px] font-medium text-bone transition-colors hover:bg-plasma hover:text-ink"
           >
             Login
           </a>
@@ -84,7 +84,7 @@ export default function SiteHeader() {
         <div className="border-t border-ink/10 bg-bone px-6 py-4 md:hidden">
           <ul className="space-y-1">
             <li className="pt-1">
-              <span className="font-ui text-[11px] uppercase tracking-wider text-sage">Services</span>
+              <span className="font-ui text-[12px] uppercase tracking-wider text-sage">Services</span>
             </li>
             {SERVICES.map((s) => (
               <li key={s.slug}>

@@ -47,7 +47,7 @@ export default function ScienceOfCare() {
             <div key={f.k} className="bg-bone p-8">
               <span className="micro-label text-sage">{f.k}</span>
               <div className="mt-4 font-heading text-6xl leading-none text-ink">{f.v}</div>
-              <p className="mt-4 font-body text-[15px] leading-relaxed text-ink/65">{f.d}</p>
+              <p className="mt-4 font-body text-[16px] leading-relaxed text-ink/65">{f.d}</p>
             </div>
           ))}
         </div>

@@ -17,7 +17,7 @@ export default function BeakerProgress({ step, total }) {
           ))}
         </div>
       </div>
-      <div className="font-ui text-[11px] leading-tight tracking-wider text-sage">
+      <div className="font-ui text-[12px] leading-tight tracking-wider text-sage">
         <div className="text-ink">{pct}%</div>
         <div>
           step {step}/{total}

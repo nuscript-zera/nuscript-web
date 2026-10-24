@@ -41,7 +41,7 @@ export default function WhyNuScript() {
             <div key={p.title} className="bg-bone p-8">
               <span className="inline-block h-1.5 w-1.5 rounded-full bg-plasma" />
               <h3 className="mt-3 font-heading text-2xl text-ink">{p.title}</h3>
-              <p className="mt-2 font-body text-[15px] leading-relaxed text-ink/65">{p.desc}</p>
+              <p className="mt-2 font-body text-[16px] leading-relaxed text-ink/65">{p.desc}</p>
             </div>
           ))}
         </div>

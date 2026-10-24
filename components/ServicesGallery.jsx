@@ -61,7 +61,7 @@ export default function ServicesGallery() {
                   className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.08]"
                 />
                 <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-ink/85 via-ink/10 to-transparent p-6 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-                  <div className="space-y-1.5 font-ui text-[11px] tracking-wider text-bone/90">
+                  <div className="space-y-1.5 font-ui text-[12px] tracking-wider text-bone/90">
                     {s.specs.map((sp) => (
                       <div key={sp} className="flex items-center gap-2">
                         <span className="h-1 w-1 rounded-full bg-plasma" />
@@ -75,8 +75,8 @@ export default function ServicesGallery() {
               <div className="mt-5 flex items-start justify-between border-t border-ink/10 pt-4">
                 <div>
                   <h3 className="font-heading text-3xl leading-none text-ink">{s.title}</h3>
-                  <p className="mt-3 max-w-xs font-body text-[15px] leading-relaxed text-ink/65">{s.short}</p>
-                  <span className="mt-4 inline-flex items-center gap-2 font-ui text-[13px] font-medium text-ink/60 transition-colors group-hover:text-ink">
+                  <p className="mt-3 max-w-xs font-body text-[16px] leading-relaxed text-ink/65">{s.short}</p>
+                  <span className="mt-4 inline-flex items-center gap-2 font-ui text-[14px] font-medium text-ink/60 transition-colors group-hover:text-ink">
                     View service{" "}
                     <ArrowRight
                       className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1"

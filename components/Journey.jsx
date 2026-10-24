@@ -57,7 +57,7 @@ export default function Journey() {
           {TRUST.map((t) => (
             <div key={t} className="flex items-start gap-3 bg-bone p-6">
               <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-plasma" />
-              <p className="font-body text-[15px] leading-relaxed text-ink/75">{t}</p>
+              <p className="font-body text-[16px] leading-relaxed text-ink/75">{t}</p>
             </div>
           ))}
         </div>

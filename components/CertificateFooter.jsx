@@ -34,7 +34,7 @@ export default function CertificateFooter() {
             {["HIPAA Compliant", "SOC 2 Aligned", "24/7 Operations", "40+ Specialties"].map((s) => (
               <span
                 key={s}
-                className="font-ui text-[11px] font-medium uppercase tracking-[0.2em] text-ink/45"
+                className="font-ui text-[12px] font-medium uppercase tracking-[0.2em] text-ink/45"
               >
                 {s}
               </span>
