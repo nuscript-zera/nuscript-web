@@ -1,7 +1,7 @@
 /* Self-hosted fonts — official variable files, served from /public/fonts at
    /fonts/*.woff2. Fraunces (display serif, carries an opsz axis) for headings,
-   Kumbh Sans (geometric sans) for body copy and UI / uppercase micro-labels.
-   Kumbh Sans has no italic cut; the few sans italics are slanted by the browser.
+   Hanken Grotesk (grotesque sans, roman + true italic) for body copy and UI /
+   uppercase micro-labels.
    No external dependency. */
 @font-face {
   font-family: "Fraunces";
@@ -18,10 +18,17 @@
   font-display: swap;
 }
 @font-face {
-  font-family: "Kumbh Sans";
-  src: url("/fonts/KumbhSans-Variable.woff2") format("woff2");
+  font-family: "Hanken Grotesk";
+  src: url("/fonts/HankenGrotesk-Roman.woff2") format("woff2");
   font-weight: 100 900;
   font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url("/fonts/HankenGrotesk-Italic.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: italic;
   font-display: swap;
 }
 @tailwind base;
@@ -36,8 +43,8 @@
     --sage: #a5a58d;
     --radius: 0.25rem;
     --font-heading: "Fraunces", ui-serif, Georgia, serif;
-    --font-sans: "Kumbh Sans", ui-sans-serif, system-ui, sans-serif;
-    --font-ui: "Kumbh Sans", ui-sans-serif, system-ui, sans-serif;
+    --font-sans: "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif;
+    --font-ui: "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif;
   }
 
   * {

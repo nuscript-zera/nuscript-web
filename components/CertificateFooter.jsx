@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { ShieldCheck } from "lucide-react";
 // Imported so the URL is content-hashed and a new logo file shows up without cache issues.
-import logoWordmark from "@/public/nuscript-logo.svg";
+import logoWordmark from "@/public/nuscript-logo.png";
 
 export default function CertificateFooter() {
   return (
